@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-bs-theme="light" data-color-theme="Blue_Theme" data-layout="vertical">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Favicon icon-->
+  <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.png" />
+
+  <!-- Core Css -->
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+
+  <title>Modernize Bootstrap Admin</title>
+  <link rel="stylesheet" href="../assets/libs/magnific-popup/dist/magnific-popup.css">
+</head>
+
+<body>
+
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <img src="../assets/images/logos/favicon.png" alt="loader" class="lds-ripple img-fluid" />
+  </div>
+  <!-- ------------------------------------- -->
+  <!-- Top Bar Start -->
+  <!-- ------------------------------------- -->
+  <div class="topbar-image bg-primary py-1 rounded-0 mb-0 alert alert-dismissible fade show" role="alert">
+    <div class="d-flex justify-content-center gap-sm-3 gap-2 align-items-center text-center flex-md-nowrap flex-wrap">
+      <span class="badge bg-white bg-opacity-10 fs-2 fw-bolder px-2">New</span>
+      <p class="mb-0 text-white fw-bold">Frontend Pages Included!</p>
+    </div>
+    <button type="button" class="btn-close btn-close-white p-2 fs-2" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  <!-- ------------------------------------- -->
+  <!-- Top Bar End -->
+  <!-- ------------------------------------- -->
+
+  <!-- ------------------------------------- -->
+  <!-- Header Start -->
+  <!-- ------------------------------------- -->
+  <header class="header-fp p-0 w-100">
+    <nav class="navbar navbar-expand-lg bg-primary-subtle py-2 py-lg-10">
+      <div class="custom-container d-flex align-items-center justify-content-between">
+        <a href="../main/frontend-landingpage.html" class="text-nowrap logo-img">
+          <img src="../assets/images/logos/dark-logo.svg" class="dark-logo" alt="Logo-Dark" />
+          <img src="../assets/images/logos/light-logo.svg" class="light-logo" alt="Logo-light" />
+        </a>
+        <button class="navbar-toggler border-0 p-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+          <i class="ti ti-menu-2 fs-8"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 gap-xl-7 gap-8 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link fs-4 fw-bold text-dark link-primary" href="../main/frontend-aboutpage.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4 fw-bold text-dark link-primary" href="../main/frontend-blogpage.html">Blog</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active fs-4 fw-bold text-dark link-primary d-flex gap-2" href="../main/frontend-portfoliopage.html">Portfolio
+                <span class="badge text-primary bg-primary-subtle fs-2 fw-bolder hstack">New</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4 fw-bold text-dark link-primary" href="../main/index.html">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4 fw-bold text-dark link-primary" href="../main/frontend-pricingpage.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4 fw-bold text-dark link-primary" href="../main/frontend-contactpage.html">Contact</a>
+            </li>
+          </ul>
+          <div>
+            <a href="../main/authentication-login.html" class="btn btn-primary py-8 px-9">Log In</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- ------------------------------------- -->
+  <!-- Header End -->
+  <!-- ------------------------------------- -->
+
+  <!-- ------------------------------------- -->
+  <!-- Responsive Sidebar Start -->
+  <!-- ------------------------------------- -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <a href="../main/frontend-landingpage.html">
+        <img src="../assets/images/logos/dark-logo.svg" alt="Logo-light" />
+      </a>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list-unstyled ps-0">
+        <li class="mb-1">
+          <a href="../main/frontend-aboutpage.html" class="px-0 fs-4 d-block text-dark link-primary w-100 py-2">
+            About Us
+          </a>
+        </li>
+
+        <li class="mb-1">
+          <a href="../main/frontend-blogpage.html" class="px-0 fs-4 d-block w-100 py-2 text-dark link-primary">
+            Blog
+          </a>
+        </li>
+
+        <li class="mb-1">
+          <a href="../main/frontend-portfoliopage.html" class="px-0 fs-4 d-flex align-items-center justify-content-start gap-2 w-100 py-2 text-dark link-primary">
+            Portfolio
+            <span class="badge text-primary bg-primary-subtle fs-2 fw-bolder hstack">New</span>
+          </a>
+        </li>
+
+        <li class="mb-1">
+          <a href="../main/index.html" class="px-0 fs-4 d-block w-100 py-2 text-dark link-primary">
+            Dashboard
+          </a>
+        </li>
+
+        <li class="mb-1">
+          <a href="../main/frontend-pricingpage.html" class="px-0 fs-4 d-block w-100 py-2 text-dark link-primary">
+            Pricing
+          </a>
+        </li>
+
+        <li class="mb-1">
+          <a href="../main/frontend-contactpage.html" class="px-0 fs-4 d-block w-100 py-2 text-dark link-primary">
+            Contact
+          </a>
+        </li>
+        <li class="mt-3">
+          <a href="../main/authentication-login.html" class="btn btn-primary w-100">Log In</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- ------------------------------------- -->
+  <!-- Responsive Sidebar End -->
+  <!-- ------------------------------------- -->
+
+  <div class="main-wrapper overflow-hidden">
+    <!-- ------------------------------------- -->
+    <!-- banner Start -->
+    <!-- ------------------------------------- -->
+    <section class="bg-primary-subtle py-14">
+      <div class="container-fluid">
+        <div class="text-center">
+          <p class="text-primary fs-4 fw-bolder">Portfolio</p>
+          <h1 class="fw-bolder fs-12">Explore Our Latest Works</h1>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------------------------- -->
+    <!-- banner End -->
+    <!-- ------------------------------------- -->
+
+    <!-- ------------------------------------- -->
+    <!-- List Start -->
+    <!-- ------------------------------------- -->
+    <section class="pt-5 pt-md-14 pb-4 pb-md-5">
+      <div class="container-fluid">
+        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+          <h3 class="mb-3 mb-sm-0 fw-semibold d-flex align-items-center">Portfolio <span class="badge text-bg-secondary fs-2 rounded-4 py-1 px-2 ms-2">12</span>
+          </h3>
+          <form class="position-relative">
+            <input type="text" class="form-control search-chat py-2 ps-5" id="text-srh" placeholder="Search Photos">
+            <i class="ti ti-search position-absolute top-50 start-0 translate-middle-y text-dark ms-3"></i>
+          </form>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="card overflow-hidden">
+              <div class="el-card-item">
+                <div class="el-card-avatar el-overlay-1 w-100 overflow-hidden position-relative">
+                  <a class="image-popup-vertical-fit" href="../assets/images/products/s1.jpg">
+                    <img src="../assets/images/products/s1.jpg" class="d-block position-relative w-100 w-100 object-fit-cover" height="220" alt="user" />
+                  </a>
+                  <div class="p-4 d-flex align-items-center justify-content-between">
+                    <div>
+                      <h6 class="mb-0 fs-4 fw-semibold">Isuava wakceajo fe.jpg</h6>
+                      <span class="text-dark fs-2">Wed, Dec 14, 2024</span>
+                    </div>
+                    <div class="dropdown">
+                      <a class="text-muted fw-semibold d-flex align-items-center p-1 fs-4" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="ti ti-dots-vertical"></i>
+                      </a>
+                      <ul class="dropdown-menu overflow-hidden">
+                        <li>
+                          <a class="dropdown-item" href="javascript:void(0)">Isuava wakceajo
+                            fe.jpg</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card overflow-hidden">
+              <div class="el-card-item">
+                <div class="el-card-avatar el-overlay-1 w-100 overflow-hidden position-relative">
+                  <a class="image-popup-vertical-fit" href="../assets/images/products/s2.jpg">
+                    <img src="../assets/images/products/s2.jpg" class="d-block position-relative w-100 w-100 object-fit-cover" height="220" alt="user" />
+                  </a>
+                  <div class="p-4 d-flex align-items-center justify-content-between">
+                    <div>
+                      <h6 class="mb-0 fs-4 fw-semibold">Ip docmowe vemremrif.jpg</h6>
+                      <span class="text-dark fs-2">Wed, Dec 14, 2024</span>
+                    </div>
+                    <div class="dropdown">
+                      <a class="text-muted fw-semibold d-flex align-items-center p-1 fs-4" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="ti ti-dots-vertical"></i>
+                      </a>
+                      <ul class="dropdown-menu overflow-hidden">
+                        <li>
+                          <a class="dropdown-item" href="javascript:void(0)">Isuava wakceajo
+                            fe.jpg</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card overflow-hidden">
+              <div class="el-card-item">
+                <div class="el-card-avatar el-overlay-1 w-100 overflow-hidden position-relative">
+                  <a class="image-popup-vertical-fit" href="../assets/images/products/s3.jpg">
+                    <img src="../assets/images/products/s3.jpg" class="d-block position-relative w-100 w-100 object-fit-cover" height="220" alt="user" />
+                  </a>
+                  <div class="p-4 d-flex align-items-center justify-content-between">
+                    <div>
+                      <h6 class="mb-0 fs-4 fw-semibold">Duan cosudos utaku.jpg</h6>
+                      <span class="text-dark fs-2">Wed, Dec 14, 2024</span>
+                    </div>
+                    <div class="dropdown">
+                      <a class="text-muted fw-semibold d-flex align-items-center p-1 fs-4" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="ti ti-dots-vertical"></i>
+                      </a>
+                      <ul class="dropdown-menu overflow-hidden">
+                        <li>
+                          <a class="dropdown-item" href="javascript:void(0)">Isuava wakceajo
+                            fe.jpg</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card overflow-hidden">
+              <div class="el-card-item">
+                <div class="el-card-avatar el-overlay-1 w-100 overflow-hidden position-relative">
+                  <a class="image-popup-vertical-fit" href="../assets/images/products/s4.jpg">
+                    <img src="../assets/images/products/s4.jpg" class="d-block position-relative w-100 w-100 object-fit-cover" height="220" alt="user" />
+                  </a>
+                  <div class="p-4 d-flex align-items-center justify-content-between">
+                    <div>
+                      <h6 class="mb-0 fs-4 fw-semibold">Fu netbuv oggu.jpg</h6>
+                      <span class="text-dark fs-2">Wed, Dec 14, 2024</span>
+                    </div>
+                    <div class="dropdown">
+                      <a class="text-muted fw-semibold d-flex align-items-center p-1 fs-4" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="ti ti-dots-vertical"></i>
+                      </a>
+                      <ul class="dropdown-menu overflow-hidden">
+                        <li>
+                          <a class="dropdown-item" href="javascript:void(0)">Isuava wakceajo
+                            fe.jpg</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card overflow-hidden">
+              <div class="el-card-item">
+                <div class="el-card-avatar el-overlay-1 w-100 overflow-hidden position-relative">
+                  <a class="image-popup-vertical-fit" href="../assets/images/products/s5.jpg">
+                    <img src="../assets/images/products/s5.jpg" class="d-block position-relative w-100 w-100 object-fit-cover" height="220" alt="user" />
+                  </a>
+                  <div class="p-4 d-flex align-items-center justify-content-between">
+                    <div>
+                      <h6 class="mb-0 fs-4 fw-semibold">Di sekog do.jpg</h6>
+                      <span class="text-dark fs-2">Wed, Dec 14, 2024</span>
+                    </div>
+                    <div class="dropdown">
+                      <a class="text-muted fw-semibold d-flex align-items-center p-1 fs-4" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="ti ti-dots-vertical"></i>
+                      </a>
+                      <ul class="dropdown-menu overflow-hidden">
+                        <li>
+                          <a class="dropdown-item" href="javascript:void(0)">Isuava wakceajo
+                            fe.jpg</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card overflow-hidden">
+              <div class="el-card-item">
+                <div class="el-card-avatar el-overlay-1 w-100 overflow-hidden position-relative">
+                  <a class="image-popup-vertical-fit" href="../assets/images/products/s6.jpg">
+                    <img src="../assets/images/products/s6.jpg" class="d-block position-relative w-100 w-100 object-fit-cover" height="220" alt="user" />
+                  </a>
+                  <div class="p-4 d-flex align-items-center justify-content-between">
+                    <div>
+                      <h6 class="mb-0 fs-4 fw-semibold">Lo jogu camhiisi.jpg</h6>
+                      <span class="text-dark fs-2">Wed, Dec 14, 2024</span>
+                    </div>
+                    <div class="dropdown">
+                      <a class="text-muted fw-semibold d-flex align-items-center p-1 fs-4" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="ti ti-dots-vertical"></i>
+                      </a>
+                      <ul class="dropdown-menu overflow-hidden">
+                        <li>
+                          <a class="dropdown-item" href="javascript:void(0)">Isuava wakceajo
+                            fe.jpg</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card overflow-hidden">
+              <div class="el-card-item">
+                <div class="el-card-avatar el-overlay-1 w-100 overflow-hidden position-relative">
+                  <a class="image-popup-vertical-fit" href="../assets/images/products/s7.jpg">
+                    <img src="../assets/images/products/s7.jpg" class="d-block position-relative w-100 w-100 object-fit-cover" height="220" alt="user" />
+                  </a>
+                  <div class="p-4 d-flex align-items-center justify-content-between">
+                    <div>
+                      <h6 class="mb-0 fs-4 fw-semibold">Orewac huosazud robuf.jpg</h6>
+                      <span class="text-dark fs-2">Wed, Dec 14, 2024</span>
+                    </div>
+                    <div class="dropdown">
+                      <a class="text-muted fw-semibold d-flex align-items-center p-1 fs-4" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="ti ti-dots-vertical"></i>
+                      </a>
+                      <ul class="dropdown-menu overflow-hidden">
+                        <li>
+                          <a class="dropdown-item" href="javascript:void(0)">Isuava wakceajo
+                            fe.jpg</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card overflow-hidden">
+              <div class="el-card-item">
+                <div class="el-card-avatar el-overlay-1 w-100 overflow-hidden position-relative">
+                  <a class="image-popup-vertical-fit" href="../assets/images/products/s8.jpg">
+                    <img src="../assets/images/products/s8.jpg" class="d-block position-relative w-100 w-100 object-fit-cover" height="220" alt="user" />
+                  </a>
+                  <div class="p-4 d-flex align-items-center justify-content-between">
+                    <div>
+                      <h6 class="mb-0 fs-4 fw-semibold">Nira biolaizo tuzi.jpg</h6>
+                      <span class="text-dark fs-2">Wed, Dec 14, 2024</span>
+                    </div>
+                    <div class="dropdown">
+                      <a class="text-muted fw-semibold d-flex align-items-center p-1 fs-4" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="ti ti-dots-vertical"></i>
+                      </a>
+                      <ul class="dropdown-menu overflow-hidden">
+                        <li>
+                          <a class="dropdown-item" href="javascript:void(0)">Isuava wakceajo
+                            fe.jpg</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card overflow-hidden">
+              <div class="el-card-item">
+                <div class="el-card-avatar el-overlay-1 w-100 overflow-hidden position-relative">
+                  <a class="image-popup-vertical-fit" href="../assets/images/products/s9.jpg">
+                    <img src="../assets/images/products/s9.jpg" class="d-block position-relative w-100 w-100 object-fit-cover" height="220" alt="user" />
+                  </a>
+                  <div class="p-4 d-flex align-items-center justify-content-between">
+                    <div>
+                      <h6 class="mb-0 fs-4 fw-semibold">Peri metu ejvu.jpg</h6>
+                      <span class="text-dark fs-2">Wed, Dec 14, 2024</span>
+                    </div>
+                    <div class="dropdown">
+                      <a class="text-muted fw-semibold d-flex align-items-center p-1 fs-4" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="ti ti-dots-vertical"></i>
+                      </a>
+                      <ul class="dropdown-menu overflow-hidden">
+                        <li>
+                          <a class="dropdown-item" href="javascript:void(0)">Isuava wakceajo
+                            fe.jpg</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card overflow-hidden">
+              <div class="el-card-item">
+                <div class="el-card-avatar el-overlay-1 w-100 overflow-hidden position-relative">
+                  <a class="image-popup-vertical-fit" href="../assets/images/products/s10.jpg">
+                    <img src="../assets/images/products/s10.jpg" class="d-block position-relative w-100 w-100 object-fit-cover" height="220" alt="user" />
+                  </a>
+                  <div class="p-4 d-flex align-items-center justify-content-between">
+                    <div>
+                      <h6 class="mb-0 fs-4 fw-semibold">Vurnohot tajraje isusufuj.jpg</h6>
+                      <span class="text-dark fs-2">Wed, Dec 14, 2024</span>
+                    </div>
+                    <div class="dropdown">
+                      <a class="text-muted fw-semibold d-flex align-items-center p-1 fs-4" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="ti ti-dots-vertical"></i>
+                      </a>
+                      <ul class="dropdown-menu overflow-hidden">
+                        <li>
+                          <a class="dropdown-item" href="javascript:void(0)">Isuava wakceajo
+                            fe.jpg</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card overflow-hidden">
+              <div class="el-card-item">
+                <div class="el-card-avatar el-overlay-1 w-100 overflow-hidden position-relative">
+                  <a class="image-popup-vertical-fit" href="../assets/images/products/s11.jpg">
+                    <img src="../assets/images/products/s11.jpg" class="d-block position-relative w-100 w-100 object-fit-cover" height="220" alt="user" />
+                  </a>
+                  <div class="p-4 d-flex align-items-center justify-content-between">
+                    <div>
+                      <h6 class="mb-0 fs-4 fw-semibold">Juc oz ma.jpg</h6>
+                      <span class="text-dark fs-2">Wed, Dec 14, 2024</span>
+                    </div>
+                    <div class="dropdown">
+                      <a class="text-muted fw-semibold d-flex align-items-center p-1 fs-4" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="ti ti-dots-vertical"></i>
+                      </a>
+                      <ul class="dropdown-menu overflow-hidden">
+                        <li>
+                          <a class="dropdown-item" href="javascript:void(0)">Isuava wakceajo
+                            fe.jpg</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card overflow-hidden">
+              <div class="el-card-item">
+                <div class="el-card-avatar el-overlay-1 w-100 overflow-hidden position-relative">
+                  <a class="image-popup-vertical-fit" href="../assets/images/products/s12.jpg">
+                    <img src="../assets/images/products/s12.jpg" class="d-block position-relative w-100 w-100 object-fit-cover" height="220" alt="user" />
+                  </a>
+                  <div class="p-4 d-flex align-items-center justify-content-between">
+                    <div>
+                      <h6 class="mb-0 fs-4 fw-semibold">Povipvez marjelliz zuuva.jpg</h6>
+                      <span class="text-dark fs-2">Wed, Dec 14, 2024</span>
+                    </div>
+                    <div class="dropdown">
+                      <a class="text-muted fw-semibold d-flex align-items-center p-1 fs-4" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="ti ti-dots-vertical"></i>
+                      </a>
+                      <ul class="dropdown-menu overflow-hidden">
+                        <li>
+                          <a class="dropdown-item" href="javascript:void(0)">Isuava wakceajo
+                            fe.jpg</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------------------------- -->
+    <!-- List End -->
+    <!-- ------------------------------------- -->
+
+    <!-- ------------------------------------- -->
+    <!-- Develop Start -->
+    <!-- ------------------------------------- -->
+    <section class="mb-5 mb-md-14 mb-lg-12">
+      <div class="custom-container">
+        <div class="bg-primary-subtle rounded-3 position-relative overflow-hidden">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="py-lg-12 ps-lg-12 py-5 px-lg-0 px-9">
+                <h2 class="fs-10 fw-bolder text-lg-start text-center">
+                  Develop with feature-rich Bootstrap Dashboard
+                </h2>
+                <div class="d-flex justify-content-lg-start justify-content-center gap-3 my-4 flex-sm-nowrap flex-wrap">
+                  <a href="../main/authentication-login.html" class="btn btn-primary py-6 px-9">Member Login</a>
+                  <a href="../main/authentication-register.html" class="btn btn-outline-primary py-6 px-9">Register as Member</a>
+                </div>
+                <p class="fs-3 text-lg-start text-center mb-0">
+                  <span class="fw-bolder">One-time purchase</span> - no recurring fees.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6 d-lg-block d-none">
+              <img src="../assets/images/frontend-pages/design-collection.png" alt="banner" class="position-absolute develop-feature-rich">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------------------------- -->
+    <!-- Develop End -->
+    <!-- ------------------------------------- -->
+  </div>
+
+  <!-- ------------------------------------- -->
+  <!-- Footer Start -->
+  <!-- ------------------------------------- -->
+  <footer>
+    <div class="container-fluid">
+      <div class="border-bottom">
+        <div class="row mb-sm-12 mb-4">
+          <div class="col-md-3 col-6">
+            <h3 class="fs-4 fw-semibold mb-7">Applications</h3>
+            <ul class="d-flex flex-column gap-9">
+              <li>
+                <a href="../main/app-kanban.html" class="fs-4 text-body link-primary">Kanban</a>
+              </li>
+              <li>
+                <a href="../main/app-invoice.html" class="fs-4 text-body link-primary">Invoice
+                  List</a>
+              </li>
+              <li>
+                <a href="../main/eco-shop.html" class="fs-4 text-body link-primary">eCommerce</a>
+              </li>
+              <li>
+                <a href="../main/app-chat.html" class="fs-4 text-body link-primary">Chat</a>
+              </li>
+              <li>
+                <a href="../main/app-calendar.html" class="fs-4 text-body link-primary">Calendar</a>
+              </li>
+              <li>
+                <a href="../main/blog-posts.html" class="fs-4 text-body link-primary">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-6">
+            <h3 class="fs-4 fw-semibold mb-7">Forms</h3>
+            <ul class="d-flex flex-column gap-9">
+              <li>
+                <a href="../main/form-basic.html" class="fs-4 text-body link-primary">Form
+                  Basic</a>
+              </li>
+              <li>
+                <a href="../main/form-horizontal.html" class="fs-4 text-body link-primary">Form
+                  Horizontal</a>
+              </li>
+              <li>
+                <a href="../main/form-wizard.html" class="fs-4 text-body link-primary">Form
+                  Wizard</a>
+              </li>
+              <li>
+                <a href="../main/form-bootstrap-validation.html" class="fs-4 text-body link-primary">Form Validation
+                </a>
+              </li>
+              <li>
+                <a href="../main/form-editor-quill.html" class="fs-4 text-body link-primary">Quill Editor</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-6">
+            <h3 class="fs-4 fw-semibold mb-7">Tables</h3>
+            <ul class="d-flex flex-column gap-9">
+              <li>
+                <a href="../main/table-basic.html" class="fs-4 text-body link-primary">Basic
+                  Table</a>
+              </li>
+              <li>
+                <a href="../main/table-dark-basic.html" class="fs-4 text-body link-primary">Table
+                  Dark Basic</a>
+              </li>
+              <li>
+                <a href="../main/table-sizing.html" class="fs-4 text-body link-primary">Table
+                  Sizing</a>
+              </li>
+              <li>
+                <a href="../main/table-layout-coloured.html" class="fs-4 text-body link-primary">Coloured Table</a>
+              </li>
+              <li>
+                <a href="../main/table-datatable-basic.html" class="fs-4 text-body link-primary">Basic Initialisation</a>
+              </li>
+              <li>
+                <a href="../main/table-datatable-api.html" class="fs-4 text-body link-primary">API</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-6">
+            <h3 class="fs-4 fw-semibold mb-7">Follow us</h3>
+            <div class="d-flex gap-9">
+              <a href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-title="Facebook">
+                <img src="../assets/images/frontend-pages/icon-facebook.svg" alt="facebook">
+              </a>
+              <a href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-title="Twitter">
+                <img src="../assets/images/frontend-pages/icon-twitter.svg" alt="twitter">
+              </a>
+              <a href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-title="Instagram">
+                <img src="../assets/images/frontend-pages/icon-instagram.svg" alt="instagram">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between py-7 flex-md-nowrap flex-wrap gap-sm-0 gap-3">
+        <div class="d-flex gap-3 align-items-center">
+          <img src="../assets/images/logos/favicon.png" alt="icon">
+          <p class="fs-4 mb-0">All rights reserved by Modernize. </p>
+        </div>
+        <div>
+          <p class="mb-0">Produced by <a target="_blank" href="https://adminmart.com/" class="text-primary link-primary">AdminMart</a>.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ------------------------------------- -->
+  <!-- Footer End -->
+  <!-- ------------------------------------- -->
+
+  <!-- Scroll Top -->
+  <a href="javascript:void(0)" class="top-btn btn btn-primary d-flex align-items-center justify-content-center round-54 p-0 rounded-circle">
+    <i class="ti ti-arrow-up fs-7"></i>
+  </a>
+
+  <script src="../assets/js/vendor.min.js"></script>
+  <!-- Import Js Files -->
+  <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/libs/simplebar/dist/simplebar.min.js"></script>
+  <script src="../assets/js/theme/app.init.js"></script>
+  <script src="../assets/js/theme/theme.js"></script>
+  <script src="../assets/js/theme/app.min.js"></script>
+
+  <!-- solar icons -->
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+  <script src="../assets/libs/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+  <script src="../assets/js/plugins/meg.init.js"></script>
+  <script src="../assets/libs/owl.carousel/dist/owl.carousel.min.js"></script>
+  <script src="../assets/js/frontend-landingpage/homepage.js"></script>
+</body>
+
+</html>

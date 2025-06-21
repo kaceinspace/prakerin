@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\BackendController;
 use App\Http\Controllers\MyController;
+use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
@@ -41,7 +43,6 @@ Route::get('promo/{barang?}/{kode?}', function ($a = null, $b = null) {
 });
 
 // Route Siswa
-use Illuminate\Support\Facades\Route;
 
 Route::get('siswa', [MyController::class, 'index']);
 // create
@@ -56,3 +57,15 @@ Route::put('siswa/{id}', [MyController::class, 'update']);
 
 // delete
 Route::delete('siswa/{id}', [MyController::class, 'destroy']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+// import controllernya
+
+// Route Admin / Backend
+Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
+    Route::get('/', [BackendController::class, 'index']);
+
+});
