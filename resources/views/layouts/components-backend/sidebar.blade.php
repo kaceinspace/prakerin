@@ -1512,10 +1512,17 @@
                     <h6 class="mb-0 fs-4 fw-semibold">{{Auth::user()->name}}</h6>
                     <span class="fs-2">{{Auth::user()->isAdmin == 1 ? 'admin': ''}}</span>
                 </div>
-                <a class="border-0 bg-transparent text-primary ms-auto" tabindex="0" type="button" aria-label="logout"
+                <a href="{{ route('logout') }}"
+                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
+                    class="border-0 bg-transparent text-primary ms-auto" tabindex="0" type="button" aria-label="logout"
                     data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="logout">
                     <i class="ti ti-power fs-6"></i>
                 </a>
+
+                <form action="{{ route('logout') }}" method="post" id="logout-form">
+                    @csrf
+                </form>
+
             </div>
         </div>
 
@@ -1523,4 +1530,4 @@
         <!-- Start Vertical Layout Sidebar -->
         <!-- ---------------------------------- -->
     </div>
-</aside>          
+</aside>

@@ -1220,6 +1220,7 @@
     <script src="{{asset('assets/backend/libs/apexcharts/dist/apexcharts.min.js')}}"></script>
     <script src="{{asset('assets/backend/js/dashboards/dashboard.js')}}"></script>
     {{-- menambah wadah js baru dan akan dipanggil ketika dibutuhkan --}}
+    @include('sweetalert::alert')
     @yield('js')
     @stack('scripts')
 </body>
