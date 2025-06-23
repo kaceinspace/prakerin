@@ -37,7 +37,7 @@
                                     <td>{{$data->price}}</td>
                                     <td>{{$data->stock}}</td>
                                     <td>
-                                        <a href="{{ route('product.edit',$data->id) }}" class="btn btn-sm btn-success">
+                                        <a href="{{ route('product.show',$data->id) }}" class="btn btn-sm btn-success">
                                             Show
                                         </a> |
                                         <a href="{{ route('product.edit',$data->id) }}" class="btn btn-sm btn-warning">
