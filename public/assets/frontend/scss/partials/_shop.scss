@@ -1,0 +1,145 @@
+.sidebar{
+
+    &__widget{
+        border-bottom: 1px solid var(--greyColor);
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        &.widget-collapse-show{
+            .sidebar__menu{
+                display: block;
+                visibility: visible;
+            }
+            .sidebar__title i {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &__title{
+        position: relative;
+        h4{
+            font-size: 20px;
+            font-weight: 600;
+        }
+        i {
+            position: absolute;
+            right: 0;
+            top: 0;
+            cursor: pointer;
+        }
+    }
+    &__menu{
+        max-height: 350px;
+        overflow-y: auto;
+        display: none;
+        visibility: hidden;
+        transition: .3s;
+        ul{
+            li{
+                display: block;
+                margin-bottom: 15px;
+                a{
+                    font-size: 14px;
+                    span{
+                        opacity: .6;
+                    }
+                }
+            }
+        }
+    }
+
+    &__box{
+        input{
+            margin-right: 5px;
+        }
+    }
+}
+
+
+.shop{
+    &__tab{
+        ul{
+            li{
+                button{
+                    font-size: 30px;
+                    margin-right: 20px;
+                    border: none;
+                    background: none;
+                    @media #{$device-md} {
+                        font-size: 20px;
+                    }
+                    @media #{$device-sm} {
+                        font-size: 20px;
+                    }
+                    &.active{
+                        color: var(--primaryColor);
+                    }
+                }
+            }
+        }
+    }
+    &__right__wraper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+    }
+   &__selecte{
+    select{
+        border-radius: 5px;
+        border: 1px solid var(--greyColor);
+        height: 50px;
+        line-height: 46px;
+        min-width: 190px;
+        padding-left: 18px;
+        padding-right: 30px;
+        @media #{$device-md} {
+            min-width: 100px;
+            max-width: 130px;
+        }
+        @media #{$device-sm} {
+            min-width: 100px;
+            max-width: 130px;
+        }
+    }
+   }
+   
+   &__number{
+    font-size: 20px;
+    font-family: var(--headingFont);
+    @media #{$device-md} {
+        font-size: 16px;
+    }
+    @media #{$device-sm} {
+        font-size: 16px;
+    }
+   }
+}
+
+.sidebar-collapse-hide {
+    @media #{$device-sm} {
+        display: none;
+        margin-top: 30px;
+    }
+
+}
+
+.default__button.sidebar-collapse-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    svg{
+        color:var(--whiteColor);
+        fill:var(--whiteColor);
+        margin-right: 5px;
+    }
+    &:hover{
+        svg{
+            color:var(--blackColor);
+            fill:var(--blackColor);
+        }
+    }
+}

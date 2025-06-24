@@ -23,6 +23,7 @@ class ProductController extends Controller
 
     public function create()
     {
+        // memanggil data category untuk select option
         $category = Category::all();
         return view('backend.product.create', compact('category'));
     }
@@ -31,15 +32,15 @@ class ProductController extends Controller
     {
         // validasi
         $validated = $request->validate([
-            'name'        => 'required|unique:categories',
+            'name'        => 'required',
             'category_id' => 'required',
             'price'       => 'required|numeric',
             'description' => 'required',
             'stock'       => 'required|numeric',
-            'image'       => 'required|image|mimes:jpg,png',
+            'image'       => 'required|image|mimes:jpg,png|max:1024',
         ]);
 
-        $product              = new product();
+        $product              = new Product();
         $product->name        = $request->name;
         $product->slug        = Str::slug($request->name, '-');
         $product->category_id = $request->category_id;
@@ -68,7 +69,8 @@ class ProductController extends Controller
 
     public function edit(string $id)
     {
-        $product  = Product::findOrFail($id);
+        $product = Product::findOrFail($id);
+        // memanggil data category untuk select option
         $category = Category::all();
         return view('backend.product.edit', compact('product', 'category'));
     }
@@ -77,7 +79,7 @@ class ProductController extends Controller
     {
         // validasi
         $validated = $request->validate([
-            'name'        => 'required|unique:categories',
+            'name'        => 'required',
             'category_id' => 'required',
             'price'       => 'required|numeric',
             'description' => 'required',

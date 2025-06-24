@@ -1,0 +1,192 @@
+.animate__content{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: var(--greyColor) no-repeat scroll center center / cover;
+    margin-top: 0px;
+    @media #{$device-sm} {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+  
+    &__wrap{
+        display: flex;
+        width: fit-content;
+        white-space: nowrap;
+        position: relative;
+        will-change: transform;
+        animation: marquee 20s linear 0s infinite normal;
+        animation-play-state: running;
+        &:hover{
+            animation-play-state: paused;
+        }
+    }
+    &__single{
+        display: block;
+        width: 100%;
+        min-width: max-content;
+        padding-inline: 20px;
+        span{
+            font-size: 30px;
+            line-height: 1;
+            margin-bottom: 0;
+            position: relative;
+            padding-left: 20px;
+            @media #{$device-sm} {
+                font-size: 20px;            
+                padding-left: 15px;
+            }
+            
+            &:before{
+                position: absolute;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--blackColor);
+    content: "";
+    top: 50%;
+    transform: translate(-50%);
+    margin-top: -5px;
+            }
+        }
+  
+    }
+}
+
+.animate__content__2{
+    margin-bottom: 0;
+}
+
+
+@keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-50%);
+    }
+}
+
+
+
+.contactarea{
+    &__single{
+        h3{
+            font-weight: 600;
+            line-height: 1.3;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+        padding: 50px 30px 25px;
+        border: 1px solid var(--greyColor);
+        border-radius: 15px;
+        margin-bottom: 30px;
+        text-align: center;
+
+
+    }
+}
+
+.contactarea__form{
+    &__area{
+        padding: 40px 50px 50px;
+        background: var(--greyColor);
+        @media #{$device-sm} {
+            padding: 30px 20px 30px;
+        }
+    }
+    &__title{
+        margin-bottom: 30px;
+        font-size: 26px;
+        font-weight: 600; 
+        @media #{$device-sm} {
+            font-size: 20px;
+        }
+    }
+    &__input{
+        input{
+            background-color: var(--whiteColor);
+            border: 2px solid;
+            border-color: var(--whiteColor);
+            height: 65px;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            padding-left: 20px;
+            font-size: 16px;
+            width: 100%;
+            margin-bottom: 30px;
+            border-radius: 0;
+            padding-right: 40px;
+            @media #{$device-sm} {
+                height: 55px;
+            }
+        
+        }
+
+        textarea{
+            width: 100%;
+            padding: 15px 20px;
+            min-height: 150px;
+            border: none;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.contact__map__inner iframe {
+    width: 100%;
+}
+
+.coll__section{
+    .coll__color{
+        background: var(--greyColor);
+        padding-top: 45px;
+        padding-bottom: 50px;
+        margin-top: 0px;
+        margin-bottom: 80px;
+        border-radius: 15px;
+    }
+    &__inner{
+        text-align: center;
+        h6{
+            font-weight: 600;
+            line-height: 1.3;
+            margin-bottom: 15px;
+            font-size: 16px;
+            color: var(--primaryColor);
+        }
+        h1{
+            font-size: 50px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            line-height: 1;
+            @media #{$device-sm} {
+                font-size: 30px;
+            } 
+        
+        }
+        .button__wrapper{
+            margin-top: 30px;
+        }
+        .button__1{
+            margin-right: 15px;
+        }
+    }
+}
+
+
+.size__table{
+    width: 100%;
+    tbody{
+       tr{
+        td{
+            padding: 5px 10px;
+            font-size: 14px;
+            border: 1px solid #e5e5e5;
+        }
+       } 
+    }
+}
+

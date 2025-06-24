@@ -12,7 +12,8 @@
                         @csrf
                         <div class="mb-2">
                             <label for="">Nama Kategori</label>
-                            <input type="text" name="name" class="form-control @error('name') is-invalid @enderror">
+                            <input type="text" name="name" class="form-control
+                            @error('name') is-invalid @enderror">
                             @error('name')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{$message}}</strong>

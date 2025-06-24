@@ -21,215 +21,7 @@
                 <!-- ------------------------------- -->
                 <!-- start apps Dropdown -->
                 <!-- ------------------------------- -->
-                <li class="nav-item nav-icon-hover-bg rounded w-auto dropdown d-none d-lg-block mx-0">
-                    <div class="hover-dd">
-                        <a class="nav-link" href="javascript:void(0)">
-                            Apps<span class="mt-1">
-                                <i class="ti ti-chevron-down fs-3"></i>
-                            </span>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-nav dropdown-menu-animate-up py-0">
-                            <div class="row">
-                                <div class="col-8">
-                                    <div class="ps-7 pt-7">
-                                        <div class="border-bottom">
-                                            <div class="row">
-                                                <div class="col-6">
-                                                    <div class="position-relative">
-                                                        <a href="./main/app-chat.html"
-                                                            class="d-flex align-items-center pb-9 position-relative">
-                                                            <div
-                                                                class="text-bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                                <img src="./assets/backend/images/svgs/icon-dd-chat.svg"
-                                                                    alt="modernize-img" class="img-fluid" width="24"
-                                                                    height="24" />
-                                                            </div>
-                                                            <div>
-                                                                <h6 class="mb-1 fw-semibold fs-3">
-                                                                    Chat Application
-                                                                </h6>
-                                                                <span class="fs-2 d-block text-body-secondary">New
-                                                                    messages arrived</span>
-                                                            </div>
-                                                        </a>
-                                                        <a href="./main/app-invoice.html"
-                                                            class="d-flex align-items-center pb-9 position-relative">
-                                                            <div
-                                                                class="text-bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                                <img src="./assets/backend/images/svgs/icon-dd-invoice.svg"
-                                                                    alt="modernize-img" class="img-fluid" width="24"
-                                                                    height="24" />
-                                                            </div>
-                                                            <div>
-                                                                <h6 class="mb-1 fw-semibold fs-3">Invoice
-                                                                    App</h6>
-                                                                <span class="fs-2 d-block text-body-secondary">Get
-                                                                    latest invoice</span>
-                                                            </div>
-                                                        </a>
-                                                        <a href="./main/app-contact2.html"
-                                                            class="d-flex align-items-center pb-9 position-relative">
-                                                            <div
-                                                                class="text-bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                                <img src="./assets/backend/images/svgs/icon-dd-mobile.svg"
-                                                                    alt="modernize-img" class="img-fluid" width="24"
-                                                                    height="24" />
-                                                            </div>
-                                                            <div>
-                                                                <h6 class="mb-1 fw-semibold fs-3">
-                                                                    Contact Application
-                                                                </h6>
-                                                                <span class="fs-2 d-block text-body-secondary">2
-                                                                    Unsaved Contacts</span>
-                                                            </div>
-                                                        </a>
-                                                        <a href="./main/app-email.html"
-                                                            class="d-flex align-items-center pb-9 position-relative">
-                                                            <div
-                                                                class="text-bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                                <img src="./assets/backend/images/svgs/icon-dd-message-box.svg"
-                                                                    alt="modernize-img" class="img-fluid" width="24"
-                                                                    height="24" />
-                                                            </div>
-                                                            <div>
-                                                                <h6 class="mb-1 fw-semibold fs-3">Email App
-                                                                </h6>
-                                                                <span class="fs-2 d-block text-body-secondary">Get
-                                                                    new emails</span>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6">
-                                                    <div class="position-relative">
-                                                        <a href="./main/page-user-profile.html"
-                                                            class="d-flex align-items-center pb-9 position-relative">
-                                                            <div
-                                                                class="text-bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                                <img src="./assets/backend/images/svgs/icon-dd-cart.svg"
-                                                                    alt="modernize-img" class="img-fluid" width="24"
-                                                                    height="24" />
-                                                            </div>
-                                                            <div>
-                                                                <h6 class="mb-1 fw-semibold fs-3">
-                                                                    User Profile
-                                                                </h6>
-                                                                <span class="fs-2 d-block text-body-secondary">learn
-                                                                    more information</span>
-                                                            </div>
-                                                        </a>
-                                                        <a href="./main/app-calendar.html"
-                                                            class="d-flex align-items-center pb-9 position-relative">
-                                                            <div
-                                                                class="text-bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                                <img src="./assets/backend/images/svgs/icon-dd-date.svg"
-                                                                    alt="modernize-img" class="img-fluid" width="24"
-                                                                    height="24" />
-                                                            </div>
-                                                            <div>
-                                                                <h6 class="mb-1 fw-semibold fs-3">
-                                                                    Calendar App
-                                                                </h6>
-                                                                <span class="fs-2 d-block text-body-secondary">Get
-                                                                    dates</span>
-                                                            </div>
-                                                        </a>
-                                                        <a href="./main/app-contact.html"
-                                                            class="d-flex align-items-center pb-9 position-relative">
-                                                            <div
-                                                                class="text-bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                                <img src="./assets/backend/images/svgs/icon-dd-lifebuoy.svg"
-                                                                    alt="modernize-img" class="img-fluid" width="24"
-                                                                    height="24" />
-                                                            </div>
-                                                            <div>
-                                                                <h6 class="mb-1 fw-semibold fs-3">
-                                                                    Contact List Table
-                                                                </h6>
-                                                                <span class="fs-2 d-block text-body-secondary">Add
-                                                                    new contact</span>
-                                                            </div>
-                                                        </a>
-                                                        <a href="./main/app-notes.html"
-                                                            class="d-flex align-items-center pb-9 position-relative">
-                                                            <div
-                                                                class="text-bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                                <img src="./assets/backend/images/svgs/icon-dd-application.svg"
-                                                                    alt="modernize-img" class="img-fluid" width="24"
-                                                                    height="24" />
-                                                            </div>
-                                                            <div>
-                                                                <h6 class="mb-1 fw-semibold fs-3">
-                                                                    Notes Application
-                                                                </h6>
-                                                                <span class="fs-2 d-block text-body-secondary">To-do
-                                                                    and Daily tasks</span>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row align-items-center py-3">
-                                            <div class="col-8">
-                                                <a class="fw-semibold d-flex align-items-center lh-1"
-                                                    href="javascript:void(0)">
-                                                    <i class="ti ti-help fs-6 me-2"></i>Frequently Asked
-                                                    Questions
-                                                </a>
-                                            </div>
-                                            <div class="col-4">
-                                                <div class="d-flex justify-content-end pe-4">
-                                                    <button class="btn btn-primary">Check</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4 ms-n4">
-                                    <div class="position-relative p-7 border-start h-100">
-                                        <h5 class="fs-5 mb-9 fw-semibold">Quick Links</h5>
-                                        <ul class="">
-                                            <li class="mb-3">
-                                                <a class="fw-semibold bg-hover-primary"
-                                                    href="./main/page-pricing.html">Pricing Page</a>
-                                            </li>
-                                            <li class="mb-3">
-                                                <a class="fw-semibold bg-hover-primary"
-                                                    href="./main/authentication-login.html">Authentication
-                                                    Design</a>
-                                            </li>
-                                            <li class="mb-3">
-                                                <a class="fw-semibold bg-hover-primary"
-                                                    href="./main/authentication-register.html">Register
-                                                    Now</a>
-                                            </li>
-                                            <li class="mb-3">
-                                                <a class="fw-semibold bg-hover-primary"
-                                                    href="./main/authentication-error.html">404 Error
-                                                    Page</a>
-                                            </li>
-                                            <li class="mb-3">
-                                                <a class="fw-semibold bg-hover-primary"
-                                                    href="./main/app-notes.html">Notes App</a>
-                                            </li>
-                                            <li class="mb-3">
-                                                <a class="fw-semibold bg-hover-primary"
-                                                    href="./main/page-user-profile.html">User
-                                                    Application</a>
-                                            </li>
-                                            <li class="mb-3">
-                                                <a class="fw-semibold bg-hover-primary"
-                                                    href="./main/page-account-settings.html">Account
-                                                    Settings</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
+
                 <!-- ------------------------------- -->
                 <!-- end apps Dropdown -->
                 <!-- ------------------------------- -->
@@ -246,8 +38,10 @@
 
             <div class="d-block d-lg-none py-4">
                 <a href="./main/index.html" class="text-nowrap logo-img">
-                    <img src="./assets/backend/images/logos/dark-logo.svg" class="dark-logo" alt="Logo-Dark" />
-                    <img src="./assets/backend/images/logos/light-logo.svg" class="light-logo" alt="Logo-light" />
+                    <img src="{{asset('assets/backend/images/logos/dark-logo.svg')}}" class="dark-logo"
+                        alt="Logo-Dark" />
+                    <img src="{{asset('assets/backend/images/logos/light-logo.svg')}}" class="light-logo"
+                        alt="Logo-light" />
                 </a>
             </div>
             <a class="navbar-toggler nav-icon-hover-bg rounded-circle p-0 mx-0 border-0" href="javascript:void(0)"
@@ -277,7 +71,7 @@
                         </li>
                         <li class="nav-item nav-icon-hover-bg rounded-circle dropdown">
                             <a class="nav-link" href="javascript:void(0)" id="drop2" aria-expanded="false">
-                                <img src="./assets/backend/images/svgs/icon-flag-en.svg" alt="modernize-img"
+                                <img src="{{asset('assets/backend/images/svgs/icon-flag-en.svg')}}" alt="modernize-img"
                                     width="20px" height="20px" class="rounded-circle object-fit-cover round-20" />
                             </a>
                             <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up"
@@ -286,8 +80,8 @@
                                     <a href="javascript:void(0)"
                                         class="d-flex align-items-center gap-2 py-3 px-4 dropdown-item">
                                         <div class="position-relative">
-                                            <img src="./assets/backend/images/svgs/icon-flag-en.svg" alt="modernize-img"
-                                                width="20px" height="20px"
+                                            <img src="{{asset('assets/backend/images/svgs/icon-flag-en.svg')}}"
+                                                alt="modernize-img" width="20px" height="20px"
                                                 class="rounded-circle object-fit-cover round-20" />
                                         </div>
                                         <p class="mb-0 fs-3">English (UK)</p>
@@ -295,8 +89,8 @@
                                     <a href="javascript:void(0)"
                                         class="d-flex align-items-center gap-2 py-3 px-4 dropdown-item">
                                         <div class="position-relative">
-                                            <img src="./assets/backend/images/svgs/icon-flag-cn.svg" alt="modernize-img"
-                                                width="20px" height="20px"
+                                            <img src="{{asset('assets/backend/images/svgs/icon-flag-cn.svg')}}"
+                                                alt="modernize-img" width="20px" height="20px"
                                                 class="rounded-circle object-fit-cover round-20" />
                                         </div>
                                         <p class="mb-0 fs-3">中国人 (Chinese)</p>
@@ -304,8 +98,8 @@
                                     <a href="javascript:void(0)"
                                         class="d-flex align-items-center gap-2 py-3 px-4 dropdown-item">
                                         <div class="position-relative">
-                                            <img src="./assets/backend/images/svgs/icon-flag-fr.svg" alt="modernize-img"
-                                                width="20px" height="20px"
+                                            <img src="{{asset('assets/backend/images/svgs/icon-flag-fr.svg')}}"
+                                                alt="modernize-img" width="20px" height="20px"
                                                 class="rounded-circle object-fit-cover round-20" />
                                         </div>
                                         <p class="mb-0 fs-3">français (French)</p>
@@ -313,8 +107,8 @@
                                     <a href="javascript:void(0)"
                                         class="d-flex align-items-center gap-2 py-3 px-4 dropdown-item">
                                         <div class="position-relative">
-                                            <img src="./assets/backend/images/svgs/icon-flag-sa.svg" alt="modernize-img"
-                                                width="20px" height="20px"
+                                            <img src="{{asset('assets/backend/images/svgs/icon-flag-sa.svg')}}"
+                                                alt="modernize-img" width="20px" height="20px"
                                                 class="rounded-circle object-fit-cover round-20" />
                                         </div>
                                         <p class="mb-0 fs-3">عربي (Arabic)</p>
@@ -360,7 +154,7 @@
                                     <a href="javascript:void(0)"
                                         class="py-6 px-7 d-flex align-items-center dropdown-item">
                                         <span class="me-3">
-                                            <img src="./assets/backend/images/profile/user-2.jpg" alt="user"
+                                            <img src="{{asset('assets/backend/images/profile/user-2.jpg')}}" alt="user"
                                                 class="rounded-circle" width="48" height="48" />
                                         </span>
                                         <div class="w-100">
@@ -372,7 +166,7 @@
                                     <a href="javascript:void(0)"
                                         class="py-6 px-7 d-flex align-items-center dropdown-item">
                                         <span class="me-3">
-                                            <img src="./assets/backend/images/profile/user-3.jpg" alt="user"
+                                            <img src="{{asset('assets/backend/images/profile/user-3.jpg')}}" alt="user"
                                                 class="rounded-circle" width="48" height="48" />
                                         </span>
                                         <div class="w-100">
@@ -384,7 +178,7 @@
                                     <a href="javascript:void(0)"
                                         class="py-6 px-7 d-flex align-items-center dropdown-item">
                                         <span class="me-3">
-                                            <img src="./assets/backend/images/profile/user-4.jpg" alt="user"
+                                            <img src="{{asset('assets/backend/images/profile/user-4.jpg')}}" alt="user"
                                                 class="rounded-circle" width="48" height="48" />
                                         </span>
                                         <div class="w-100">
@@ -396,7 +190,7 @@
                                     <a href="javascript:void(0)"
                                         class="py-6 px-7 d-flex align-items-center dropdown-item">
                                         <span class="me-3">
-                                            <img src="./assets/backend/images/profile/user-5.jpg" alt="user"
+                                            <img src="{{asset('assets/backend/images/profile/user-5.jpg')}}" alt="user"
                                                 class="rounded-circle" width="48" height="48" />
                                         </span>
                                         <div class="w-100">
@@ -408,7 +202,7 @@
                                     <a href="javascript:void(0)"
                                         class="py-6 px-7 d-flex align-items-center dropdown-item">
                                         <span class="me-3">
-                                            <img src="./assets/backend/images/profile/user-6.jpg" alt="user"
+                                            <img src="{{asset('assets/backend/images/profile/user-6.jpg')}}" alt="user"
                                                 class="rounded-circle" width="48" height="48" />
                                         </span>
                                         <div class="w-100">
@@ -420,7 +214,7 @@
                                     <a href="javascript:void(0)"
                                         class="py-6 px-7 d-flex align-items-center dropdown-item">
                                         <span class="me-3">
-                                            <img src="./assets/backend/images/profile/user-7.jpg" alt="user"
+                                            <img src="{{asset('assets/backend/images/profile/user-7.jpg')}}" alt="user"
                                                 class="rounded-circle" width="48" height="48" />
                                         </span>
                                         <div class="w-100">
@@ -447,8 +241,8 @@
                             <a class="nav-link pe-0" href="javascript:void(0)" id="drop1" aria-expanded="false">
                                 <div class="d-flex align-items-center">
                                     <div class="user-profile-img">
-                                        <img src="./assets/backend/images/profile/user-1.jpg" class="rounded-circle"
-                                            width="35" height="35" alt="modernize-img" />
+                                        <img src="{{asset('assets/backend/images/profile/user-1.jpg')}}"
+                                            class="rounded-circle" width="35" height="35" alt="modernize-img" />
                                     </div>
                                 </div>
                             </a>
@@ -459,8 +253,8 @@
                                         <h5 class="mb-0 fs-5 fw-semibold">User Profile</h5>
                                     </div>
                                     <div class="d-flex align-items-center py-9 mx-7 border-bottom">
-                                        <img src="./assets/backend/images/profile/user-1.jpg" class="rounded-circle"
-                                            width="80" height="80" alt="modernize-img" />
+                                        <img src="{{asset('assets/backend/images/profile/user-1.jpg')}}"
+                                            class="rounded-circle" width="80" height="80" alt="modernize-img" />
                                         <div class="ms-3">
                                             <h5 class="mb-1 fs-3">Mathew Anderson</h5>
                                             <span class="mb-1 d-block">Designer</span>
@@ -474,7 +268,7 @@
                                             class="py-8 px-7 mt-8 d-flex align-items-center">
                                             <span
                                                 class="d-flex align-items-center justify-content-center text-bg-light rounded-1 p-6">
-                                                <img src="./assets/backend/images/svgs/icon-account.svg"
+                                                <img src="{{asset('assets/backend/images/svgs/icon-account.svg')}}"
                                                     alt="modernize-img" width="24" height="24" />
                                             </span>
                                             <div class="w-100 ps-3">
@@ -486,7 +280,7 @@
                                         <a href="./main/app-email.html" class="py-8 px-7 d-flex align-items-center">
                                             <span
                                                 class="d-flex align-items-center justify-content-center text-bg-light rounded-1 p-6">
-                                                <img src="./assets/backend/images/svgs/icon-inbox.svg"
+                                                <img src="{{asset('assets/backend/images/svgs/icon-inbox.svg')}}"
                                                     alt="modernize-img" width="24" height="24" />
                                             </span>
                                             <div class="w-100 ps-3">
@@ -498,7 +292,7 @@
                                         <a href="./main/app-notes.html" class="py-8 px-7 d-flex align-items-center">
                                             <span
                                                 class="d-flex align-items-center justify-content-center text-bg-light rounded-1 p-6">
-                                                <img src="./assets/backend/images/svgs/icon-tasks.svg"
+                                                <img src="{{asset('assets/backend/images/svgs/icon-tasks.svg')}}"
                                                     alt="modernize-img" width="24" height="24" />
                                             </span>
                                             <div class="w-100 ps-3">
@@ -518,7 +312,7 @@
                                                 </div>
                                                 <div class="col-6">
                                                     <div class="m-n4 unlimited-img">
-                                                        <img src="./assets/backend/images/backgrounds/unlimited-bg.png"
+                                                        <img src="{{asset('assets/backend/images/backgrounds/unlimited-bg.png')}}"
                                                             alt="modernize-img" class="w-100" />
                                                     </div>
                                                 </div>
@@ -549,162 +343,13 @@
             aria-labelledby="offcanvasWithBothOptionsLabel">
             <nav class="sidebar-nav scroll-sidebar">
                 <div class="offcanvas-header justify-content-between">
-                    <img src="./assets/backend/images/logos/favicon.ico" alt="modernize-img" class="img-fluid" />
+                    <img src="{{asset('assets/backend/images/logos/favicon.ico')}}" alt="modernize-img"
+                        class="img-fluid" />
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body h-n80" data-simplebar="" data-simplebar>
                     <ul id="sidebarnav">
-                        <li class="sidebar-item">
-                            <a class="sidebar-link has-arrow" href="javascript:void(0)" aria-expanded="false">
-                                <span>
-                                    <i class="ti ti-apps"></i>
-                                </span>
-                                <span class="hide-menu">Apps</span>
-                            </a>
-                            <ul aria-expanded="false" class="collapse first-level my-3">
-                                <li class="sidebar-item py-2">
-                                    <a href="./main/app-chat.html" class="d-flex align-items-center">
-                                        <div
-                                            class="text-bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                            <img src="./assets/backend/images/svgs/icon-dd-chat.svg" alt="modernize-img"
-                                                class="img-fluid" width="24" height="24" />
-                                        </div>
-                                        <div>
-                                            <h6 class="mb-1 bg-hover-primary">Chat Application</h6>
-                                            <span class="fs-2 d-block text-muted">New messages
-                                                arrived</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="sidebar-item py-2">
-                                    <a href="./main/app-invoice.html" class="d-flex align-items-center">
-                                        <div
-                                            class="text-bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                            <img src="./assets/backend/images/svgs/icon-dd-invoice.svg"
-                                                alt="modernize-img" class="img-fluid" width="24" height="24" />
-                                        </div>
-                                        <div>
-                                            <h6 class="mb-1 bg-hover-primary">Invoice App</h6>
-                                            <span class="fs-2 d-block text-muted">Get latest invoice</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="sidebar-item py-2">
-                                    <a href="./main/app-cotact.html" class="d-flex align-items-center">
-                                        <div
-                                            class="text-bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                            <img src="./assets/backend/images/svgs/icon-dd-mobile.svg"
-                                                alt="modernize-img" class="img-fluid" width="24" height="24" />
-                                        </div>
-                                        <div>
-                                            <h6 class="mb-1 bg-hover-primary">Contact Application</h6>
-                                            <span class="fs-2 d-block text-muted">2 Unsaved Contacts</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="sidebar-item py-2">
-                                    <a href="./main/app-email.html" class="d-flex align-items-center">
-                                        <div
-                                            class="text-bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                            <img src="./assets/backend/images/svgs/icon-dd-message-box.svg"
-                                                alt="modernize-img" class="img-fluid" width="24" height="24" />
-                                        </div>
-                                        <div>
-                                            <h6 class="mb-1 bg-hover-primary">Email App</h6>
-                                            <span class="fs-2 d-block text-muted">Get new emails</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="sidebar-item py-2">
-                                    <a href="./main/page-user-profile.html" class="d-flex align-items-center">
-                                        <div
-                                            class="text-bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                            <img src="./assets/backend/images/svgs/icon-dd-cart.svg" alt="modernize-img"
-                                                class="img-fluid" width="24" height="24" />
-                                        </div>
-                                        <div>
-                                            <h6 class="mb-1 bg-hover-primary">User Profile</h6>
-                                            <span class="fs-2 d-block text-muted">learn more
-                                                information</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="sidebar-item py-2">
-                                    <a href="./main/app-calendar.html" class="d-flex align-items-center">
-                                        <div
-                                            class="text-bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                            <img src="./assets/backend/images/svgs/icon-dd-date.svg" alt="modernize-img"
-                                                class="img-fluid" width="24" height="24" />
-                                        </div>
-                                        <div>
-                                            <h6 class="mb-1 bg-hover-primary">Calendar App</h6>
-                                            <span class="fs-2 d-block text-muted">Get dates</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="sidebar-item py-2">
-                                    <a href="./main/app-contact2.html" class="d-flex align-items-center">
-                                        <div
-                                            class="text-bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                            <img src="./assets/backend/images/svgs/icon-dd-lifebuoy.svg"
-                                                alt="modernize-img" class="img-fluid" width="24" height="24" />
-                                        </div>
-                                        <div>
-                                            <h6 class="mb-1 bg-hover-primary">Contact List Table</h6>
-                                            <span class="fs-2 d-block text-muted">Add new contact</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="sidebar-item py-2">
-                                    <a href="./main/app-notes.html" class="d-flex align-items-center">
-                                        <div
-                                            class="text-bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                            <img src="./assets/backend/images/svgs/icon-dd-application.svg"
-                                                alt="modernize-img" class="img-fluid" width="24" height="24" />
-                                        </div>
-                                        <div>
-                                            <h6 class="mb-1 bg-hover-primary">Notes Application</h6>
-                                            <span class="fs-2 d-block text-muted">To-do and Daily
-                                                tasks</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <ul class="px-8 mt-7 mb-4">
-                                    <li class="sidebar-item mb-3">
-                                        <h5 class="fs-5 fw-semibold">Quick Links</h5>
-                                    </li>
-                                    <li class="sidebar-item py-2">
-                                        <a class="fw-semibold text-dark" href="./main/page-pricing.html">Pricing
-                                            Page</a>
-                                    </li>
-                                    <li class="sidebar-item py-2">
-                                        <a class="fw-semibold text-dark"
-                                            href="./main/authentication-login.html">Authentication
-                                            Design</a>
-                                    </li>
-                                    <li class="sidebar-item py-2">
-                                        <a class="fw-semibold text-dark"
-                                            href="./main/authentication-register.html">Register Now</a>
-                                    </li>
-                                    <li class="sidebar-item py-2">
-                                        <a class="fw-semibold text-dark" href="./main/authentication-error.html">404
-                                            Error Page</a>
-                                    </li>
-                                    <li class="sidebar-item py-2">
-                                        <a class="fw-semibold text-dark" href="./main/app-notes.html">Notes
-                                            App</a>
-                                    </li>
-                                    <li class="sidebar-item py-2">
-                                        <a class="fw-semibold text-dark" href="./main/page-user-profile.html">User
-                                            Application</a>
-                                    </li>
-                                    <li class="sidebar-item py-2">
-                                        <a class="fw-semibold text-dark"
-                                            href="./main/page-account-settings.html">Account Settings</a>
-                                    </li>
-                                </ul>
-                            </ul>
-                        </li>
+
                         <li class="sidebar-item">
                             <a class="sidebar-link" href="./main/app-chat.html" aria-expanded="false">
                                 <span>
@@ -744,10 +389,10 @@
                 </li>
                 <li class="nav-item d-none d-xl-block">
                     <a href="./main/index.html" class="text-nowrap nav-link">
-                        <img src="./assets/backend/images/logos/dark-logo.svg" class="dark-logo" width="180"
+                        <img src="{{asset('assets/backend/images/logos/dark-logo.svg')}}" class="dark-logo" width="180"
                             alt="modernize-img" />
-                        <img src="./assets/backend/images/logos/light-logo.svg" class="light-logo" width="180"
-                            alt="modernize-img" />
+                        <img src="{{asset('assets/backend/images/logos/light-logo.svg')}}" class="light-logo"
+                            width="180" alt="modernize-img" />
                     </a>
                 </li>
                 <li class="nav-item nav-icon-hover-bg rounded-circle d-none d-xl-flex">
@@ -760,215 +405,7 @@
                 <!-- ------------------------------- -->
                 <!-- start apps Dropdown -->
                 <!-- ------------------------------- -->
-                <li class="nav-item nav-icon-hover-bg rounded w-auto dropdown d-none d-lg-flex">
-                    <div class="hover-dd">
-                        <a class="nav-link" href="javascript:void(0)">
-                            Apps<span class="mt-1">
-                                <i class="ti ti-chevron-down fs-3"></i>
-                            </span>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-nav dropdown-menu-animate-up py-0">
-                            <div class="row">
-                                <div class="col-8">
-                                    <div class="ps-7 pt-7">
-                                        <div class="border-bottom">
-                                            <div class="row">
-                                                <div class="col-6">
-                                                    <div class="position-relative">
-                                                        <a href="./main/app-chat.html"
-                                                            class="d-flex align-items-center pb-9 position-relative">
-                                                            <div
-                                                                class="text-bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                                <img src="./assets/backend/images/svgs/icon-dd-chat.svg"
-                                                                    alt="modernize-img" class="img-fluid" width="24"
-                                                                    height="24" />
-                                                            </div>
-                                                            <div>
-                                                                <h6 class="mb-1 fw-semibold fs-3">
-                                                                    Chat Application
-                                                                </h6>
-                                                                <span class="fs-2 d-block text-body-secondary">New
-                                                                    messages arrived</span>
-                                                            </div>
-                                                        </a>
-                                                        <a href="./main/app-invoice.html"
-                                                            class="d-flex align-items-center pb-9 position-relative">
-                                                            <div
-                                                                class="text-bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                                <img src="./assets/backend/images/svgs/icon-dd-invoice.svg"
-                                                                    alt="modernize-img" class="img-fluid" width="24"
-                                                                    height="24" />
-                                                            </div>
-                                                            <div>
-                                                                <h6 class="mb-1 fw-semibold fs-3">Invoice
-                                                                    App</h6>
-                                                                <span class="fs-2 d-block text-body-secondary">Get
-                                                                    latest invoice</span>
-                                                            </div>
-                                                        </a>
-                                                        <a href="./main/app-contact2.html"
-                                                            class="d-flex align-items-center pb-9 position-relative">
-                                                            <div
-                                                                class="text-bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                                <img src="./assets/backend/images/svgs/icon-dd-mobile.svg"
-                                                                    alt="modernize-img" class="img-fluid" width="24"
-                                                                    height="24" />
-                                                            </div>
-                                                            <div>
-                                                                <h6 class="mb-1 fw-semibold fs-3">
-                                                                    Contact Application
-                                                                </h6>
-                                                                <span class="fs-2 d-block text-body-secondary">2
-                                                                    Unsaved Contacts</span>
-                                                            </div>
-                                                        </a>
-                                                        <a href="./main/app-email.html"
-                                                            class="d-flex align-items-center pb-9 position-relative">
-                                                            <div
-                                                                class="text-bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                                <img src="./assets/backend/images/svgs/icon-dd-message-box.svg"
-                                                                    alt="modernize-img" class="img-fluid" width="24"
-                                                                    height="24" />
-                                                            </div>
-                                                            <div>
-                                                                <h6 class="mb-1 fw-semibold fs-3">Email App
-                                                                </h6>
-                                                                <span class="fs-2 d-block text-body-secondary">Get
-                                                                    new emails</span>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6">
-                                                    <div class="position-relative">
-                                                        <a href="./main/page-user-profile.html"
-                                                            class="d-flex align-items-center pb-9 position-relative">
-                                                            <div
-                                                                class="text-bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                                <img src="./assets/backend/images/svgs/icon-dd-cart.svg"
-                                                                    alt="modernize-img" class="img-fluid" width="24"
-                                                                    height="24" />
-                                                            </div>
-                                                            <div>
-                                                                <h6 class="mb-1 fw-semibold fs-3">
-                                                                    User Profile
-                                                                </h6>
-                                                                <span class="fs-2 d-block text-body-secondary">learn
-                                                                    more information</span>
-                                                            </div>
-                                                        </a>
-                                                        <a href="./main/app-calendar.html"
-                                                            class="d-flex align-items-center pb-9 position-relative">
-                                                            <div
-                                                                class="text-bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                                <img src="./assets/backend/images/svgs/icon-dd-date.svg"
-                                                                    alt="modernize-img" class="img-fluid" width="24"
-                                                                    height="24" />
-                                                            </div>
-                                                            <div>
-                                                                <h6 class="mb-1 fw-semibold fs-3">
-                                                                    Calendar App
-                                                                </h6>
-                                                                <span class="fs-2 d-block text-body-secondary">Get
-                                                                    dates</span>
-                                                            </div>
-                                                        </a>
-                                                        <a href="./main/app-contact.html"
-                                                            class="d-flex align-items-center pb-9 position-relative">
-                                                            <div
-                                                                class="text-bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                                <img src="./assets/backend/images/svgs/icon-dd-lifebuoy.svg"
-                                                                    alt="modernize-img" class="img-fluid" width="24"
-                                                                    height="24" />
-                                                            </div>
-                                                            <div>
-                                                                <h6 class="mb-1 fw-semibold fs-3">
-                                                                    Contact List Table
-                                                                </h6>
-                                                                <span class="fs-2 d-block text-body-secondary">Add
-                                                                    new contact</span>
-                                                            </div>
-                                                        </a>
-                                                        <a href="./main/app-notes.html"
-                                                            class="d-flex align-items-center pb-9 position-relative">
-                                                            <div
-                                                                class="text-bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                                <img src="./assets/backend/images/svgs/icon-dd-application.svg"
-                                                                    alt="modernize-img" class="img-fluid" width="24"
-                                                                    height="24" />
-                                                            </div>
-                                                            <div>
-                                                                <h6 class="mb-1 fw-semibold fs-3">
-                                                                    Notes Application
-                                                                </h6>
-                                                                <span class="fs-2 d-block text-body-secondary">To-do
-                                                                    and Daily tasks</span>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row align-items-center py-3">
-                                            <div class="col-8">
-                                                <a class="fw-semibold d-flex align-items-center lh-1"
-                                                    href="javascript:void(0)">
-                                                    <i class="ti ti-help fs-6 me-2"></i>Frequently Asked
-                                                    Questions
-                                                </a>
-                                            </div>
-                                            <div class="col-4">
-                                                <div class="d-flex justify-content-end pe-4">
-                                                    <button class="btn btn-primary">Check</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4 ms-n4">
-                                    <div class="position-relative p-7 border-start h-100">
-                                        <h5 class="fs-5 mb-9 fw-semibold">Quick Links</h5>
-                                        <ul class="">
-                                            <li class="mb-3">
-                                                <a class="fw-semibold bg-hover-primary"
-                                                    href="./main/page-pricing.html">Pricing Page</a>
-                                            </li>
-                                            <li class="mb-3">
-                                                <a class="fw-semibold bg-hover-primary"
-                                                    href="./main/authentication-login.html">Authentication
-                                                    Design</a>
-                                            </li>
-                                            <li class="mb-3">
-                                                <a class="fw-semibold bg-hover-primary"
-                                                    href="./main/authentication-register.html">Register
-                                                    Now</a>
-                                            </li>
-                                            <li class="mb-3">
-                                                <a class="fw-semibold bg-hover-primary"
-                                                    href="./main/authentication-error.html">404 Error
-                                                    Page</a>
-                                            </li>
-                                            <li class="mb-3">
-                                                <a class="fw-semibold bg-hover-primary"
-                                                    href="./main/app-notes.html">Notes App</a>
-                                            </li>
-                                            <li class="mb-3">
-                                                <a class="fw-semibold bg-hover-primary"
-                                                    href="./main/page-user-profile.html">User
-                                                    Application</a>
-                                            </li>
-                                            <li class="mb-3">
-                                                <a class="fw-semibold bg-hover-primary"
-                                                    href="./main/page-account-settings.html">Account
-                                                    Settings</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
+
                 <!-- ------------------------------- -->
                 <!-- end apps Dropdown -->
                 <!-- ------------------------------- -->
@@ -984,7 +421,7 @@
             </ul>
             <div class="d-block d-xl-none">
                 <a href="./main/index.html" class="text-nowrap nav-link">
-                    <img src="./assets/backend/images/logos/dark-logo.svg" width="180" alt="modernize-img" />
+                    <img src="{{asset('assets/backend/images/logos/dark-logo.svg')}}" width="180" alt="modernize-img" />
                 </a>
             </div>
             <a class="navbar-toggler nav-icon-hover-bg rounded-circle p-0 mx-0 border-0" href="javascript:void(0)"
@@ -1016,7 +453,7 @@
                         </li>
                         <li class="nav-item nav-icon-hover-bg rounded-circle dropdown">
                             <a class="nav-link" href="javascript:void(0)" id="drop2" aria-expanded="false">
-                                <img src="./assets/backend/images/svgs/icon-flag-en.svg" alt="modernize-img"
+                                <img src="{{asset('assets/backend/images/svgs/icon-flag-en.svg')}}" alt="modernize-img"
                                     width="20px" height="20px" class="rounded-circle object-fit-cover round-20" />
                             </a>
                             <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up"
@@ -1025,8 +462,8 @@
                                     <a href="javascript:void(0)"
                                         class="d-flex align-items-center gap-2 py-3 px-4 dropdown-item">
                                         <div class="position-relative">
-                                            <img src="./assets/backend/images/svgs/icon-flag-en.svg" alt="modernize-img"
-                                                width="20px" height="20px"
+                                            <img src="{{asset('assets/backend/images/svgs/icon-flag-en.svg')}}"
+                                                alt="modernize-img" width="20px" height="20px"
                                                 class="rounded-circle object-fit-cover round-20" />
                                         </div>
                                         <p class="mb-0 fs-3">English (UK)</p>
@@ -1034,8 +471,8 @@
                                     <a href="javascript:void(0)"
                                         class="d-flex align-items-center gap-2 py-3 px-4 dropdown-item">
                                         <div class="position-relative">
-                                            <img src="./assets/backend/images/svgs/icon-flag-cn.svg" alt="modernize-img"
-                                                width="20px" height="20px"
+                                            <img src="{{asset('assets/backend/images/svgs/icon-flag-cn.svg')}}"
+                                                alt="modernize-img" width="20px" height="20px"
                                                 class="rounded-circle object-fit-cover round-20" />
                                         </div>
                                         <p class="mb-0 fs-3">中国人 (Chinese)</p>
@@ -1043,8 +480,8 @@
                                     <a href="javascript:void(0)"
                                         class="d-flex align-items-center gap-2 py-3 px-4 dropdown-item">
                                         <div class="position-relative">
-                                            <img src="./assets/backend/images/svgs/icon-flag-fr.svg" alt="modernize-img"
-                                                width="20px" height="20px"
+                                            <img src="{{asset('assets/backend/images/svgs/icon-flag-fr.svg')}}"
+                                                alt="modernize-img" width="20px" height="20px"
                                                 class="rounded-circle object-fit-cover round-20" />
                                         </div>
                                         <p class="mb-0 fs-3">français (French)</p>
@@ -1052,8 +489,8 @@
                                     <a href="javascript:void(0)"
                                         class="d-flex align-items-center gap-2 py-3 px-4 dropdown-item">
                                         <div class="position-relative">
-                                            <img src="./assets/backend/images/svgs/icon-flag-sa.svg" alt="modernize-img"
-                                                width="20px" height="20px"
+                                            <img src="{{asset('assets/backend/images/svgs/icon-flag-sa.svg')}}"
+                                                alt="modernize-img" width="20px" height="20px"
                                                 class="rounded-circle object-fit-cover round-20" />
                                         </div>
                                         <p class="mb-0 fs-3">عربي (Arabic)</p>
@@ -1099,8 +536,8 @@
                                     <a href="javascript:void(0)"
                                         class="py-6 px-7 d-flex align-items-center dropdown-item">
                                         <span class="me-3">
-                                            <img src="./assets/backend/images/profile/user-2.jpg" alt="user"
-                                                class="rounded-circle" width="48" height="48" />
+                                            <img src="{{asset('assets/backend/images/profile/user-')}}2.jpg')}}"
+                                                alt="user" class="rounded-circle" width="48" height="48" />
                                         </span>
                                         <div class="w-100">
                                             <h6 class="mb-1 fw-semibold lh-base">Roman Joined the Team!</h6>
@@ -1111,7 +548,7 @@
                                     <a href="javascript:void(0)"
                                         class="py-6 px-7 d-flex align-items-center dropdown-item">
                                         <span class="me-3">
-                                            <img src="./assets/backend/images/profile/user-3.jpg" alt="user"
+                                            <img src="{{asset('assets/backend/images/profile/user-3.jpg')}}" alt="user"
                                                 class="rounded-circle" width="48" height="48" />
                                         </span>
                                         <div class="w-100">
@@ -1123,7 +560,7 @@
                                     <a href="javascript:void(0)"
                                         class="py-6 px-7 d-flex align-items-center dropdown-item">
                                         <span class="me-3">
-                                            <img src="./assets/backend/images/profile/user-4.jpg" alt="user"
+                                            <img src="{{asset('assets/backend/images/profile/user-4.jpg')}}" alt="user"
                                                 class="rounded-circle" width="48" height="48" />
                                         </span>
                                         <div class="w-100">
@@ -1135,7 +572,7 @@
                                     <a href="javascript:void(0)"
                                         class="py-6 px-7 d-flex align-items-center dropdown-item">
                                         <span class="me-3">
-                                            <img src="./assets/backend/images/profile/user-5.jpg" alt="user"
+                                            <img src="{{asset('assets/backend/images/profile/user-5.jpg')}}" alt="user"
                                                 class="rounded-circle" width="48" height="48" />
                                         </span>
                                         <div class="w-100">
@@ -1147,7 +584,7 @@
                                     <a href="javascript:void(0)"
                                         class="py-6 px-7 d-flex align-items-center dropdown-item">
                                         <span class="me-3">
-                                            <img src="./assets/backend/images/profile/user-6.jpg" alt="user"
+                                            <img src="{{asset('assets/backend/images/profile/user-6.jpg')}}" alt="user"
                                                 class="rounded-circle" width="48" height="48" />
                                         </span>
                                         <div class="w-100">
@@ -1159,7 +596,7 @@
                                     <a href="javascript:void(0)"
                                         class="py-6 px-7 d-flex align-items-center dropdown-item">
                                         <span class="me-3">
-                                            <img src="./assets/backend/images/profile/user-7.jpg" alt="user"
+                                            <img src="{{asset('assets/backend/images/profile/user-7.jpg')}}" alt="user"
                                                 class="rounded-circle" width="48" height="48" />
                                         </span>
                                         <div class="w-100">
@@ -1186,8 +623,8 @@
                             <a class="nav-link pe-0" href="javascript:void(0)" id="drop1" aria-expanded="false">
                                 <div class="d-flex align-items-center">
                                     <div class="user-profile-img">
-                                        <img src="./assets/backend/images/profile/user-1.jpg" class="rounded-circle"
-                                            width="35" height="35" alt="modernize-img" />
+                                        <img src="{{asset('assets/backend/images/profile/user-1.jpg')}}"
+                                            class="rounded-circle" width="35" height="35" alt="modernize-img" />
                                     </div>
                                 </div>
                             </a>
@@ -1198,8 +635,8 @@
                                         <h5 class="mb-0 fs-5 fw-semibold">User Profile</h5>
                                     </div>
                                     <div class="d-flex align-items-center py-9 mx-7 border-bottom">
-                                        <img src="./assets/backend/images/profile/user-1.jpg" class="rounded-circle"
-                                            width="80" height="80" alt="modernize-img" />
+                                        <img src="{{asset('assets/backend/images/profile/user-1.jpg')}}"
+                                            class="rounded-circle" width="80" height="80" alt="modernize-img" />
                                         <div class="ms-3">
                                             <h5 class="mb-1 fs-3">Mathew Anderson</h5>
                                             <span class="mb-1 d-block">Designer</span>
@@ -1213,7 +650,7 @@
                                             class="py-8 px-7 mt-8 d-flex align-items-center">
                                             <span
                                                 class="d-flex align-items-center justify-content-center text-bg-light rounded-1 p-6">
-                                                <img src="./assets/backend/images/svgs/icon-account.svg"
+                                                <img src="{{asset('assets/backend/images/svgs/icon-account.svg')}}"
                                                     alt="modernize-img" width="24" height="24" />
                                             </span>
                                             <div class="w-100 ps-3">
@@ -1225,7 +662,7 @@
                                         <a href="./main/app-email.html" class="py-8 px-7 d-flex align-items-center">
                                             <span
                                                 class="d-flex align-items-center justify-content-center text-bg-light rounded-1 p-6">
-                                                <img src="./assets/backend/images/svgs/icon-inbox.svg"
+                                                <img src="{{asset('assets/backend/images/svgs/icon-inbox.svg')}}"
                                                     alt="modernize-img" width="24" height="24" />
                                             </span>
                                             <div class="w-100 ps-3">
@@ -1237,7 +674,7 @@
                                         <a href="./main/app-notes.html" class="py-8 px-7 d-flex align-items-center">
                                             <span
                                                 class="d-flex align-items-center justify-content-center text-bg-light rounded-1 p-6">
-                                                <img src="./assets/backend/images/svgs/icon-tasks.svg"
+                                                <img src="{{asset('assets/backend/images/svgs/icon-tasks.svg')}}"
                                                     alt="modernize-img" width="24" height="24" />
                                             </span>
                                             <div class="w-100 ps-3">
@@ -1257,7 +694,7 @@
                                                 </div>
                                                 <div class="col-6">
                                                     <div class="m-n4 unlimited-img">
-                                                        <img src="./assets/backend/images/backgrounds/unlimited-bg.png"
+                                                        <img src="{{asset('assets/backend/images/backgrounds/unlimited-bg.png')}}"
                                                             alt="modernize-img" class="w-100" />
                                                     </div>
                                                 </div>

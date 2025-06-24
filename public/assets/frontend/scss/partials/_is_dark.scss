@@ -1,0 +1,202 @@
+.is_dark{
+    .headerarea__has__dropdown span {
+        color: var(--blackColor);
+    }
+    .header__topbar{
+        background-color: var(--greyColor2);
+        
+        .header__topbar__left{
+            ul{
+                li{
+                    color: var(--blackColor);
+                }
+            }
+        }
+        .header__topbar__language__wraper{
+            span{
+                color: var(--blackColor); 
+            }
+        }
+        .header__topbar__language__inner{
+            ul{
+                li{
+                    a{
+                       i{
+                        color: var(--blackColor); 
+                       }
+                    }
+                }
+            }
+        }
+        .header__topbar__social__icon{
+            ul{
+                li{
+                    a{
+                        color: var(--blackColor);  
+                    }
+                }
+            }
+        }
+    }
+    .header__topbar__language {
+        color: var(--blackColor);
+    }
+    .minicart__close__btn {
+        color: var(--blackColor);
+    }
+    .minicart__single .minicart__single__img .minicart__single__close button {
+        background: var(--blackColor);
+    }
+    .setting__wrap__close {
+        color: var(--blackColor);
+    }
+    .headersearch__active__input button {
+        color: var(--blackColor);
+    }
+    .headersearch__active__close {
+        color: var(--blackColor);
+    }
+    .headersearch__active__input input {
+        color: var(--blackColor);
+    }
+
+    .herobanner__inner{
+        background-color: var(--greyColor2); 
+    }
+    .mobile-off-canvas-active .header-mobile-aside-wrap .mobile-search form input {
+        background-color: #332b2b;
+        color: var(--blackColor);
+    }
+    .mobile-off-canvas-active .header-mobile-aside-wrap .mobile-social-wrap a {
+        background: #332b2b;
+    }
+    .mobile-off-canvas-active .mobile-aside-close {
+        color: var(--blackColor);
+    }
+    .best__selling {
+        .best__selling__tab{
+            ul{
+                li{
+                    button{
+                        color: var(--blackColor); 
+                        &.active{
+                            color: var( --primaryColor);
+                        }  
+                    }
+                }
+            }
+        }
+    }
+
+  
+  
+    .footer__inner{
+        background-color: var(--greyColor2);    
+    }
+    .herobanner__2{
+        background-color: var(--greyColor2);
+    }
+
+    .feature__border{
+        border: 1px solid #333333;
+    }
+    .testimonial__2{
+        background-color: var(--greyColor2);  
+    }
+    .footer__2{
+        background-color: var(--greyColor2);   
+    }
+    .newslatter__2{
+        background-color: var(--whiteColor);
+    }
+    .footer__inner{
+        background-color: var(--greyColor2);  
+    }
+ 
+
+    .small__grid__wraper{
+        border: 1px solid #333333; 
+    }
+
+
+    .copyright {
+        background-color: #1a1a1a;
+        border-color: #1a1a1a;
+    }
+
+ 
+  
+    .herobanner__8{
+        background: var(--whiteColor);
+    }
+
+
+    .loginarea__wraper{
+        background-color: var(--greyColor2);
+    }
+
+  
+    .blog__sidebar{
+        border-bottom: 1px solid #333333 ;
+    }
+
+    .registerarea__form__container{
+        background-color: var(--greyColor2);  
+    }
+
+    .descriptionarea__tab__button{
+        
+            li{
+                button{
+                    color: var(--blackColor);
+                }
+            }
+        
+    }
+    .single__product__button{
+        background: var(--blackColor);
+    }
+
+    .single__product__bottom__button{
+        background: var(--blackColor); 
+    }
+
+    .herobanner__title{
+        color: var(--whiteColor);
+    }
+    .herobanner__text{
+        p{
+            color: var(--whiteColor); 
+        }
+    }
+    .herobanner__title__color{
+        color: var(--blackColor);  
+    }
+    .herobanner__text__color{
+        p{
+            color: var(--blackColor);  
+        }
+    }
+    .default__button{
+        color: var(--blackColor);  
+    }
+    .herobanner__small__title{
+        color: var(--whiteColor); 
+    }
+    .modal-content {
+        background-color: #333333;
+    }
+    .featurearea__quantity .qty-container button {
+        color: var(--blackColor);  
+    }
+    .qty-container input {
+        background:   #333333;
+        color: var(--blackColor);
+    }
+    .slider__default__arrow--2 .slick-arrow {
+        background: var(--whiteColor); 
+        &:hover{
+            color: var(--blackColor);  
+        }
+    }
+}

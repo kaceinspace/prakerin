@@ -1,0 +1,29 @@
+// color
+$bodyColor: #222222;
+$whiteColor: #ffffff;
+$blackColor:#000000;
+$contentColor:#222222;
+$primaryColor :#fe4770;
+$secondaryColor: #7654FF;
+$borderColor:#eeeeee;
+//$boxshadow1:0px 16px 32px 0px rgb(0 0 0 / 4%);
+//$boxshadow2:0px 0px 0px 8px rgb(255 255 255 / 20%);
+$borderRadius: 4px;
+$borderRadius2: 20px;
+$borderRadius3: 10px;
+$transition:.3s;
+$bodyFont: 'Poppins',
+sans-serif;
+$headingFont: 'Poppins',
+sans-serif;
+$contentFont: 'Poppins',
+sans-serif;
+$secondaryFont: 'Montserrat',
+sans-serif;
+// Responsive Variables
+$device-xxl: '(min-width: 1500px) and (max-width: 1920px)';
+$device-xl: '(min-width: 1366px) and (max-width: 1499px)';
+$device-lg: '(min-width: 992px) and (max-width: 1365px)';
+$device-md: '(min-width: 768px) and (max-width: 991px)';
+$device-sm:'(max-width: 767px)';
+$device-sm-large:'(min-width: 576px) and (max-width: 767px)';

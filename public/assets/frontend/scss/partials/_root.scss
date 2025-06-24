@@ -1,0 +1,128 @@
+:root {
+    // color
+    --bodyColor: #303030;
+    --bodyBg: #fff;
+    --whiteColor: #ffffff;
+    --whiteColor2:#f6f6f6;
+    --blackColor: #000000;
+    --blackColor2:  #333333;
+    --contentColor: #303030;
+    --headingColor: #1f1f25;
+    --primaryColor: #0a85d1;
+    --secondaryColor:  #f34f3f;
+    --borderColor: #eeeeee;
+    --greyColor: #ebebeb;
+    --greyColor2: #333333;
+    --yellow:#eab73e;
+    --yellow2: #c29958;
+    --red:#d3122a;
+    --greywhite: #f69679;
+    --green:#0b9d8a;
+   
+    
+    --borderColor2: #ccc;
+   
+    --greyColor1: #f6f6f6;
+    --greyColor3: #717171;
+    --greyColor4: #f5f5f5;
+    --deepblue: #1e1345;
+   
+    --darkgrey: #f6f6f6;
+    --darkgrey2: #f1f1f1;
+    --darkgrey3:#5a5a5a;
+ 
+    --pink:#ce126e;
+ 
+  
+    // $boxshadow1:0px 16px 32px 0px rgb(0 0 0 / 4%);
+    //$boxshadow2:0px 0px 0px 8px rgb(255 255 255 / 20%);
+    --borderRadius: 5px;
+    --borderRadius2: 10px;
+    --borderRadius3: 15px;
+    --borderRadius4: 100px;
+    --transition: .3s;
+    --transition2: transform 0.65s cubic-bezier(0.05, 0.2, 0.1, 1) 0s, box-shadow 0.65s cubic-bezier(0.05, 0.2, 0.1, 1) 0s;
+    --bodyFont:  "Poppins", sans-serif;
+    --headingFont: 'Futura Std', sans-serif;
+    --gradientColor :   linear-gradient(90deg, rgba(255, 192, 41, 1) 9.5%, rgba(130, 99, 255, 1) 74.49%)
+    --gradientColor2 :  linear-gradient(3.98deg, rgba(0, 0, 0, 0) 3.24%, var(--blackColor) 93.62%);
+    
+}
+
+
+// Responsive Variables
+$device-xxl: '(min-width: 1500px) and (max-width: 1920px)';
+$device-xl: '(min-width: 1366px) and (max-width: 1499px)';
+$device-lg: '(min-width: 992px) and (max-width: 1365px)';
+$device-md: '(min-width: 768px) and (max-width: 991px)';
+$device-sm: '(max-width: 767px)';
+$device-sm-large: '(min-width: 576px) and (max-width: 767px)';
+
+
+
+.is_dark {
+    --bodyColor: #ffffff;
+    --bodyBg: #1a1a1a;
+    --whiteColor: #1a1a1a;
+    --whiteColor2:#1a1a1a;
+    --blackColor2:  #fff;
+    --contentColor: #fff;
+    --headingColor: #fff;
+    --greyColor: #333333;
+    --blackColor:#fff;
+}
+
+
+
+
+
+.layout__2{
+    --bodyFont:  "Nunito", sans-serif;
+    --headingFont: "Nunito", sans-serif;
+    --primaryColor: #eab73e;
+}
+
+
+.layout__3{
+    --bodyFont:  "Work Sans", sans-serif;
+    --headingFont: "Work Sans", sans-serif;
+    --primaryColor: #d3122a;
+}
+
+.layout__4{
+    --bodyFont:  "Lora", sans-serif;
+    --headingFont: "Lora", sans-serif;
+    --primaryColor: #f69679;
+}
+
+.layout__5{
+    --bodyFont:  "Lato", sans-serif;
+    --headingFont: "Lato", sans-serif;
+    --primaryColor: #c29958;
+}
+
+.layout__6{
+    --bodyFont:  "Nunito Sans", sans-serif;
+    --headingFont: "Nunito Sans", sans-serif;
+    --primaryColor: #0b9d8a;
+}
+
+.layout__7{
+    --bodyFont:  "Inter", sans-serif;
+    --headingFont:  "Inter", sans-serif;
+    --primaryColor: #02a9f7;
+}
+.layout__8{
+    --bodyFont:  "Lato", sans-serif;
+    --headingFont:   "Playfair Display", serif;
+    --primaryColor: #ff3654;
+}
+
+
+
+
+
+
+
+
+

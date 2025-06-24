@@ -1,0 +1,239 @@
+.banner{
+    &__img{
+        position: relative;
+        @media #{$device-sm} {
+            margin: 10px 0;
+           }
+        img{
+            width: 100%;
+            border-radius: var(--borderRadius2);
+        }
+    }
+    &__info{
+        position: absolute;
+        left: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+        h2{
+            font-size: 30px;
+            @media #{$device-sm} {
+                font-size: 25px;
+               }
+        }
+        
+    }
+    &__button{
+        margin-top: 25px;
+        @media #{$device-sm} {
+            margin-top: 10px;
+           }
+    }
+}
+.banner__4{
+    .banner__info{
+        h2{
+            a{
+                &:hover{
+                    color: var(--red);
+                }
+            }
+        }
+    }
+}
+
+.banner__info__4{
+    right: 30px;
+    left: auto;
+    text-align: right;
+  
+}
+
+
+
+
+.banner__6{
+   .banner__6__img{
+    img{
+        width: 100%;
+        border-radius: 15px;
+    }
+   } 
+}
+
+.banner__7{
+    &__img{
+        @media #{$device-md} {
+            margin-bottom: 20px;
+             }
+        @media #{$device-sm} {
+          margin-bottom: 20px;
+           }
+        img{
+            width: 100%;
+            border-radius: 15px;
+        }
+    }
+}
+
+
+
+.brand__single{
+    .brand__img{
+        img{
+            margin: auto;
+        }
+    }
+} 
+
+
+.small__banner__6__img{
+    overflow: hidden;
+    border-radius: 15px;
+    &:hover{
+        img{
+            transform: scale(1.05)
+        }
+    }
+}
+
+.banner__6__img{
+    overflow: hidden;
+    border-radius: 15px;
+    &:hover{
+        img{
+            transform: scale(1.05)
+        }
+    }
+}
+
+
+
+
+
+
+
+.instagram .section__title {
+    padding-bottom: 35px;
+}
+
+.instagram__img{
+    margin-bottom: 30px;
+    overflow: hidden;
+    border-radius: var(--borderRadius2);
+
+    img{
+        width: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    a{
+        transition: all .5s ease 0s;
+        position: relative;
+        overflow: hidden;
+        &:hover{
+            img{
+                -webkit-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                transform: scale(1.1);
+            }
+        }
+        &::before {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+            height: 100%;
+            background-color: rgba(17, 17, 17, 0.5);
+            content: "";
+            z-index: 1;
+            opacity: 0;
+            transition: all .5s ease 0s;
+        }
+        &::after {
+            position: absolute;
+            content: "+";
+            font-size: 50px;
+            top: 50%;
+            left: 50%;
+            z-index: 3;
+            margin-left: -15px;
+            margin-top: -15px;
+            color: var(--whiteColor);
+            opacity: 0;
+            line-height: 30px;
+            transition: all .5s ease 0s;
+        }
+    }
+
+    &:hover{
+        a{
+            &::before {
+                opacity: 1;
+            }
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.banner__4{
+   .banner__img{
+    @media #{$device-sm} {
+        margin-bottom: 10px;
+      }
+  
+   }
+}
+.banner__3{
+    &__inner{
+        margin-bottom: 30px;
+        @media #{$device-sm} {
+            margin-bottom: 10px;
+          }  
+    }
+    &__img{
+        position: relative;
+        width: 100%;
+        border-radius: 15px;
+        img{
+            width: 100%;
+            border-radius: 15px;
+        }
+    }
+    &__text{
+        position: absolute;
+        left: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+        h2{
+            font-weight: 700;
+            line-height: 1.3;
+            font-size: 30px;
+            margin: 0;
+            @media #{$device-sm} {
+                font-size: 20px;
+            }  
+        }
+    }
+    &__right{
+        right: 30px; 
+        left: auto;
+    }
+}
+
+.small__banner__6__img{
+    img{
+        width: 100%;
+        border-radius: 15px;
+    }
+}
+
+.banner__6__img{
+    @media #{$device-md} {
+        margin-bottom: 30px;
+      }
+      @media #{$device-sm} {
+        margin-bottom: 30px;
+      }
+}

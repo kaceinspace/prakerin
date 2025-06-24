@@ -1,0 +1,222 @@
+.cartarea{
+
+   &__table__content{
+    table{
+        border: 1px solid var(--borderColor);
+        width: 100%;
+        thead{
+            tr{
+                background-color: var(--greyColor);
+                border: 1px solid var(--borderColor);
+                th{
+                    border-top: medium none;
+                    font-size: 14px;
+                    font-weight: 600;
+                    padding: 21px 45px 22px;
+                    text-align: center;
+                    vertical-align: middle;
+                    white-space: nowrap;
+                    @media #{$device-md} {
+                        padding: 21px 15px 22px; 
+                       }
+                       @media #{$device-sm} {
+                        padding: 21px 5px 22px; 
+                       }
+                }
+            }
+        }
+        tbody{
+          tr{
+            border-bottom: 1px solid var(--borderColor);
+            td{
+                font-size: 16px;
+                 text-align: center;
+                 min-width: 150px;
+                 border: 1px solid var(--borderColor);
+                 padding: 15px;
+                 @media #{$device-sm} {
+                    font-size: 14px;
+                   }
+                 a{
+                    svg{
+                        width: 25px;
+                    }
+                 }
+            }
+          }  
+        }
+    }
+
+   } 
+   &__product__name{
+    width: 435px;
+   }
+   &__product__quantity{
+    width: 435px;
+   }
+   &__plus__minus{
+    display: inline-block;
+    height: 40px;
+    padding: 0;
+    position: relative;
+    width: 110px;
+    border: 1px solid var(--borderColor2);
+    overflow: hidden;
+    .qtybutton{
+        color: #333;
+        cursor: pointer;
+        float: inherit;
+        font-size: 16px;
+        margin: 0;
+        position: absolute;
+        -webkit-transition: all .3s ease 0s;
+        -o-transition: all .3s ease 0s;
+        transition: all .3s ease 0s;
+        width: 20px;
+        text-align: center;
+       
+        &.dec{
+            border-right: 1px solid var(--borderColor2);
+            height: 40px;
+            left: 0;
+            padding-top: 8px;
+            top: 0;
+        }
+        &.inc{
+            border-left: 1px solid var(--borderColor2);
+            height: 40px;
+            padding-top: 9px;
+            right: 0;
+            top: 0;
+        }
+    }
+   }
+   &__plus__minus__box{
+    color: #333;
+    float: left;
+    font-size: 14px;
+    height: 40px;
+    margin: 0;
+    width: 110px;
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid var(--borderColor2);
+    padding: 0;
+    text-align: center;
+}
+&__product__thumbnail{
+    a{
+        img{
+            width: 100%;
+            max-width: 100px;
+        }
+    }
+}
+&__shiping__update__wrapper{
+    padding: 30px 0 55px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media #{$device-sm} {
+        padding: 30px 0;
+    }
+    > *{
+        @media #{$device-sm} {
+            margin: 5px 0;
+        }
+    }
+}
+
+&__tax{
+    background-color: var(--greyColor);
+    border: 1px solid var(--borderColor);
+    border-radius: 5px;
+    padding: 45px 30px 50px;
+    @media #{$device-md} {
+     margin-bottom: 30px;
+    }
+    @media #{$device-sm} {
+        margin-bottom: 30px;
+       }
+}
+&__title{
+    position: relative;
+
+    h4{
+        display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    padding-right: 18px;
+    position: relative;
+    z-index: 99;
+    }
+}
+&__text{
+    margin-top: 22px;
+}
+
+  &__tax__select{
+    margin-bottom: 20px;
+    select{
+        box-shadow: none;
+        font-size: 12px;
+        height: 40px;
+        padding: 0 50px 0 15px;
+        width: 100%;
+        cursor: pointer;
+    }
+  }
+  &__code{
+    margin-bottom: 20px;
+    input{
+        box-shadow: none;
+        font-size: 12px;
+        height: 40px;
+        padding: 0 50px 0 15px;
+        width: 100%;
+        cursor: pointer;
+        border: 1px solid var(--borderColor2);
+
+    }
+  }
+  &__discount__code{
+    margin: 21px 0 0;
+    textarea{
+        
+    border: 1px solid var(--borderColor2);
+    background: var(--whiteColor);
+    width: 100%;
+    height: 100px;
+
+    }
+  }
+  &__grand__totall{
+    h5{
+        font-size: 14px;
+        margin: 36px 0 27px;
+        span{
+            float: right;
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+  
+  }
+
+}
+
+.cartarea__product__quantity{
+    .featurearea__quantity{
+        justify-content: center;
+        margin: 0;
+        .qty-container{
+            border: 1px solid var(--borderColor);
+            margin-right: 0;
+        }
+    }
+}
+
+
+.featurearea__quantity .qty-container button {
+    border: none;
+}
