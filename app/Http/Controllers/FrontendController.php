@@ -30,4 +30,13 @@ class FrontendController extends Controller
         return view('single_product', compact('product'));
     }
 
+    public function filterByCategory($slug)
+    {
+        $category         = Category::all();
+        $selectedCategory = Category::where('slug', $slug)->firstOrFail();
+        $product          = Product::where('category_id', $selectedCategory->id)->latest()->get();
+
+        return view('product', compact('product', 'category', 'selectedCategory'));
+    }
+
 }

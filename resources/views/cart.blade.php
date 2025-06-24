@@ -102,7 +102,7 @@
                 <div class="col-lg-12">
                     <div class="cartarea__shiping__update__wrapper">
                         <div class="cartarea__shiping__update">
-                            <a class="default__button" href="#">Proceed to Checkout</a>
+                            <a class="default__button" href="{{ route('cart.checkout') }}">Proceed to Checkout</a>
                         </div>
                     </div>
                 </div>

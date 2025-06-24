@@ -36,10 +36,19 @@
 
                             <div class="sidebar__menu">
                                 <ul>
+                                    <li>
+                                        <a href="{{ route('product.index') }}"
+                                            class="{{ !isset($selectedCategory) ? 'fw-bold text-primary' : '' }}">
+                                            All Categories
+                                        </a>
+                                    </li>
                                     @foreach ($category as $cat)
                                         <li>
-                                            <a href="#">{{ $cat->name }}
-                                                <span>({{ $cat->product->count() }})</span></a>
+                                            <a href="{{ route('product.filter', $cat->slug) }}"
+                                                class="{{ isset($selectedCategory) && $selectedCategory->id == $cat->id ? 'fw-bold text-primary' : '' }}">
+                                                {{ $cat->name }} <span>({{ $cat->product->count() }})</span>
+                                            </a>
+
                                         </li>
                                     @endforeach
                                 </ul>
