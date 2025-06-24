@@ -2,6 +2,7 @@
 namespace App\Http\Controllers;
 
 // import model
+use App\Models\Category;
 use App\Models\Product;
 
 class FrontendController extends Controller
@@ -19,8 +20,9 @@ class FrontendController extends Controller
 
     public function product()
     {
-        $product = Product::latest()->get();
-        return view('product', compact('product'));
+        $category = Category::all();
+        $product  = Product::latest()->get();
+        return view('product', compact('product', 'category'));
     }
 
     public function singleProduct(Product $product)
@@ -28,8 +30,4 @@ class FrontendController extends Controller
         return view('single_product', compact('product'));
     }
 
-    public function cart()
-    {
-        return view('cart');
-    }
 }

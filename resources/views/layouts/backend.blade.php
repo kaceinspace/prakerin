@@ -8,14 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Favicon icon-->
-    <link rel="shortcut icon" type="image/png" href="{{asset('assets/backend/images/logos/favicon.png')}}" />
+    <link rel="shortcut icon" type="image/png" href="{{ asset('assets/backend/images/logos/favicon.png') }}" />
 
     <!-- Core Css -->
-    <link rel="stylesheet" href="{{asset('assets/backend/css/styles.css')}}" />
+    <link rel="stylesheet" href="{{ asset('assets/backend/css/styles.css') }}" />
 
     <title>Modernize Bootstrap Admin</title>
     <!-- Owl Carousel  -->
-    <link rel="stylesheet" href="{{asset('assets/backend/libs/owl.carousel/dist/assets/owl.carousel.min.css')}}" />
+    <link rel="stylesheet" href="{{ asset('assets/backend/libs/owl.carousel/dist/assets/owl.carousel.min.css') }}" />
     {{-- menambah wadah style dan akan dipanggil ketika dibutuhkan --}}
     @yield('styles')
 </head>
@@ -26,7 +26,7 @@
     </div>
     <!-- Preloader -->
     <div class="preloader">
-        <img src="{{asset('assets/backend/images/logos/favicon.png')}}" alt="loader" class="lds-ripple img-fluid" />
+        <img src="{{ asset('assets/backend/images/logos/favicon.png') }}" alt="loader" class="lds-ripple img-fluid" />
     </div>
     <div id="main-wrapper">
         <!-- Sidebar Start -->
@@ -741,7 +741,8 @@
                             <li class="sidebar-item">
                                 <a class="sidebar-link has-arrow" href="javascript:void(0)" aria-expanded="false">
                                     <span class="rounded-3">
-                                        <iconify-icon icon="solar:airbuds-case-minimalistic-line-duotone" class="ti">
+                                        <iconify-icon icon="solar:airbuds-case-minimalistic-line-duotone"
+                                            class="ti">
                                         </iconify-icon>
                                     </span>
                                     <span class="hide-menu">Multi DD</span>
@@ -805,8 +806,8 @@
             </div>
             <script>
                 function handleColorTheme(e) {
-    document.documentElement.setAttribute("data-color-theme", e);
-  }
+                    document.documentElement.setAttribute("data-color-theme", e);
+                }
             </script>
             <button
                 class="btn btn-primary p-3 rounded-circle d-flex align-items-center justify-content-center customizer-btn"
@@ -821,7 +822,8 @@
                     <h4 class="offcanvas-title fw-semibold" id="offcanvasExampleLabel">
                         Settings
                     </h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body h-n80" data-simplebar>
                     <h6 class="fw-semibold fs-4 mb-2">Theme</h6>
@@ -842,12 +844,14 @@
 
                     <h6 class="mt-5 fw-semibold fs-4 mb-2">Theme Direction</h6>
                     <div class="d-flex flex-row gap-3 customizer-box" role="group">
-                        <input type="radio" class="btn-check" name="direction-l" id="ltr-layout" autocomplete="off" />
+                        <input type="radio" class="btn-check" name="direction-l" id="ltr-layout"
+                            autocomplete="off" />
                         <label class="btn p-9 btn-outline-primary" for="ltr-layout">
                             <i class="icon ti ti-text-direction-ltr fs-7 me-2"></i>LTR
                         </label>
 
-                        <input type="radio" class="btn-check" name="direction-l" id="rtl-layout" autocomplete="off" />
+                        <input type="radio" class="btn-check" name="direction-l" id="rtl-layout"
+                            autocomplete="off" />
                         <label class="btn p-9 btn-outline-primary" for="rtl-layout">
                             <i class="icon ti ti-text-direction-rtl fs-7 me-2"></i>RTL
                         </label>
@@ -892,8 +896,8 @@
                         <input type="radio" class="btn-check" name="color-theme-layout" id="green-theme-layout"
                             autocomplete="off" />
                         <label class="btn p-9 btn-outline-primary d-flex align-items-center justify-content-center"
-                            onclick="handleColorTheme('Green_Theme')" for="green-theme-layout" data-bs-toggle="tooltip"
-                            data-bs-placement="top" data-bs-title="GREEN_THEME">
+                            onclick="handleColorTheme('Green_Theme')" for="green-theme-layout"
+                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="GREEN_THEME">
                             <div
                                 class="color-box rounded-circle d-flex align-items-center justify-content-center skin-4">
                                 <i class="ti ti-check text-white d-flex icon fs-5"></i>
@@ -944,12 +948,14 @@
                     <h6 class="mt-5 fw-semibold fs-4 mb-2">Container Option</h6>
 
                     <div class="d-flex flex-row gap-3 customizer-box" role="group">
-                        <input type="radio" class="btn-check" name="layout" id="boxed-layout" autocomplete="off" />
+                        <input type="radio" class="btn-check" name="layout" id="boxed-layout"
+                            autocomplete="off" />
                         <label class="btn p-9 btn-outline-primary" for="boxed-layout">
                             <i class="icon ti ti-layout-distribute-vertical fs-7 me-2"></i>Boxed
                         </label>
 
-                        <input type="radio" class="btn-check" name="layout" id="full-layout" autocomplete="off" />
+                        <input type="radio" class="btn-check" name="layout" id="full-layout"
+                            autocomplete="off" />
                         <label class="btn p-9 btn-outline-primary" for="full-layout">
                             <i class="icon ti ti-layout-distribute-horizontal fs-7 me-2"></i>Full
                         </label>
@@ -1097,8 +1103,8 @@
                 <ul class="mb-0">
                     <li class="pb-7">
                         <div class="d-flex align-items-center">
-                            <img src="{{asset('assets/backend/images/products/product-1.jpg')}}" width="95" height="75"
-                                class="rounded-1 me-9 flex-shrink-0" alt="modernize-img" />
+                            <img src="{{ asset('assets/backend/images/products/product-1.jpg') }}" width="95"
+                                height="75" class="rounded-1 me-9 flex-shrink-0" alt="modernize-img" />
                             <div>
                                 <h6 class="mb-1">Supreme toys cooker</h6>
                                 <p class="mb-0 text-muted fs-2">Kitchenware Item</p>
@@ -1124,8 +1130,8 @@
                     </li>
                     <li class="pb-7">
                         <div class="d-flex align-items-center">
-                            <img src="{{asset('assets/backend/images/products/product-2.jpg')}}" width="95" height="75"
-                                class="rounded-1 me-9 flex-shrink-0" alt="modernize-img" />
+                            <img src="{{ asset('assets/backend/images/products/product-2.jpg') }}" width="95"
+                                height="75" class="rounded-1 me-9 flex-shrink-0" alt="modernize-img" />
                             <div>
                                 <h6 class="mb-1">Supreme toys cooker</h6>
                                 <p class="mb-0 text-muted fs-2">Kitchenware Item</p>
@@ -1151,8 +1157,8 @@
                     </li>
                     <li class="pb-7">
                         <div class="d-flex align-items-center">
-                            <img src="{{asset('assets/backend/images/products/product-3.jpg')}}" width="95" height="75"
-                                class="rounded-1 me-9 flex-shrink-0" alt="modernize-img" />
+                            <img src="{{ asset('assets/backend/images/products/product-3.jpg') }}" width="95"
+                                height="75" class="rounded-1 me-9 flex-shrink-0" alt="modernize-img" />
                             <div>
                                 <h6 class="mb-1">Supreme toys cooker</h6>
                                 <p class="mb-0 text-muted fs-2">Kitchenware Item</p>
@@ -1196,20 +1202,20 @@
         </div>
     </div>
     <div class="dark-transparent sidebartoggler"></div>
-    <script src="{{asset('assets/backend/js/vendor.min.js')}}"></script>
+    <script src="{{ asset('assets/backend/js/vendor.min.js') }}"></script>
     <!-- Import Js Files -->
-    <script src="{{asset('assets/backend/libs/bootstrap/dist/js/bootstrap.bundle.min.js')}}"></script>
-    <script src="{{asset('assets/backend/libs/simplebar/dist/simplebar.min.js')}}"></script>
-    <script src="{{asset('assets/backend/js/theme/app.init.js')}}"></script>
-    <script src="{{asset('assets/backend/js/theme/theme.js')}}"></script>
-    <script src="{{asset('assets/backend/js/theme/app.min.js')}}"></script>
-    <script src="{{asset('assets/backend/js/theme/sidebarmenu.js')}}"></script>
+    <script src="{{ asset('assets/backend/libs/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('assets/backend/libs/simplebar/dist/simplebar.min.js') }}"></script>
+    <script src="{{ asset('assets/backend/js/theme/app.init.js') }}"></script>
+    <script src="{{ asset('assets/backend/js/theme/theme.js') }}"></script>
+    <script src="{{ asset('assets/backend/js/theme/app.min.js') }}"></script>
+    <script src="{{ asset('assets/backend/js/theme/sidebarmenu.js') }}"></script>
 
     <!-- solar icons -->
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
-    <script src="{{asset('assets/backend/libs/owl.carousel/dist/owl.carousel.min.js')}}"></script>
-    <script src="{{asset('assets/backend/libs/apexcharts/dist/apexcharts.min.js')}}"></script>
-    <script src="{{asset('assets/backend/js/dashboards/dashboard.js')}}"></script>
+    <script src="{{ asset('assets/backend/libs/owl.carousel/dist/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('assets/backend/libs/apexcharts/dist/apexcharts.min.js') }}"></script>
+    <script src="{{ asset('assets/backend/js/dashboards/dashboard.js') }}"></script>
     {{-- menambah wadah js baru dan akan dipanggil ketika dibutuhkan --}}
     @include('sweetalert::alert')
     @yield('js')
