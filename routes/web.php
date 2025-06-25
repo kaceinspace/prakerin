@@ -13,8 +13,10 @@ use Illuminate\Support\Facades\Route;
 // Route guest (tamu) / member
 Route::get('/', [FrontendController::class, 'index']);
 Route::get('/product', [FrontendController::class, 'product'])->name('product.index');
-Route::get('/product/{product}', [FrontendController::class, 'singleProduct'])->name('product.show');
-Route::get('/product/category/{slug}', [FrontendController::class, 'filterByCategory'])->name('product.filter');
+Route::get('/product/{product}', [FrontendController::class, 'singleProduct'])
+    ->name('product.show');
+Route::get('/product/category/{slug}', [FrontendController::class, 'filterByCategory'])
+    ->name('product.filter');
 Route::get('/search', [FrontendController::class, 'search'])->name('product.search');
 
 Route::get('/about', [FrontendController::class, 'about']);

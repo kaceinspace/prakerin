@@ -45,8 +45,8 @@ class CartController extends Controller
                 'qty'        => $request->qty,
             ]);
         }
-
-        return redirect()->back()->with('success', 'Produk berhasil ditambahkan ke keranjang.');
+        toast('Produk berhasil ditambahkan ke keranjang.', 'success');
+        return back();
     }
 
     public function updateCart(Request $request, $id)

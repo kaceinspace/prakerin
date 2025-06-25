@@ -28,12 +28,12 @@
                 <div class="featurearea__details__img">
                     <div class="featurearea__big__img">
                         <div class="featurearea__single__big__img">
-                            <img src="{{ Storage::exists($product->image) ? Storage::url($product->image) : asset('assets/frontend/img/grid/grid__1.png') }}" alt="{{ $product->name }}">
+                            <img src="{{  Storage::url($product->image) }}" alt="{{ $product->name }}">
                         </div>
                     </div>
                     <div class="featurearea__thumb__img featurearea__thumb__img__slider__active slider__default__arrow">
                         <div class="featurearea__single__thumb__img">
-                            <img src="{{ Storage::exists($product->image) ? Storage::url($product->image) : asset('assets/frontend/img/grid/grid__1.png') }}" alt="{{ $product->name }}">
+                            <img src="{{ Storage::url($product->image) }}" alt="{{ $product->name }}">
                         </div>
                     </div>
                 </div>
@@ -81,7 +81,7 @@
                         <div class="single__product__quantity mb-3">
                             <div class="qty-container me-3">
                                 <button type="button" class="qty-btn-minus btn-qty">-</button>
-                                <input type="text" name="qty" value="1" class="input-qty">
+                                <input type="text" name="qty" value="1" max="{{ $product->stock }}" class="input-qty">
                                 <button type="button" class="qty-btn-plus btn-qty">+</button>
                             </div>
                             <button type="submit" class="default__button">
@@ -90,15 +90,6 @@
                             <a href="#" class="default__button black__button">Buy it Now</a>
                         </div>
                     </form>
-
-                    <div class="single__product__bottom__menu">
-                        <ul>
-                            <li><a href="#"><i class="far fa-heart"></i> Add to Wishlist</a></li>
-                            <li><a href="#"><i class="fas fa-exchange-alt"></i> Compare</a></li>
-                            <li><a href="#"><i class="far fa-envelope"></i> Ask a Question</a></li>
-                            <li><a href="#"><i class="far fa-chart-bar"></i> Size Chart</a></li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </div>
@@ -149,7 +140,8 @@
                             <small class="text-muted">{{ $review->created_at->format('d M Y, H:i') }}</small>
                         </div>
                         <div class="mb-1">
-                            @for ($i = 1; $i <= 5; $i++) <i class="fa{{ $i <= $review->point ? 's' : 'r' }} fa-star text-warning"></i>
+                            @for ($i = 1; $i <= 5; $i++) <i
+                                class="fa{{ $i <= $review->point ? 's' : 'r' }} fa-star text-warning"></i>
                                 @endfor
                         </div>
                         <p class="mb-0">{{ $review->comment }}</p>
