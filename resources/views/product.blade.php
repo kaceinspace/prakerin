@@ -63,64 +63,72 @@
                         <div class="tab-pane fade active show" id="projects__one" role="tabpanel"
                             aria-labelledby="projects__one">
                             <div class="row grid__responsive">
-                                @foreach ($product as $data)
-                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-6">
-                                        <div class="grid__wraper">
-                                            <div class="grid__wraper__img">
-                                                <div class="grid__wraper__img__inner">
-                                                    <a href="{{ url('/product/' . $data->slug) }}">
-                                                        @php
-                                                            $image =
-                                                                $data->image && Storage::exists($data->image)
-                                                                    ? Storage::url($data->image)
-                                                                    : asset('assets/frontend/img/grid/grid__1.png');
-                                                            $secondaryImage =
-                                                                $data->image && Storage::exists($data->image)
-                                                                    ? Storage::url($data->image)
-                                                                    : asset('assets/frontend/img/grid/grid__2.png');
-                                                        @endphp
-                                                        <img class="primary__image" src="{{ $image }}"
-                                                            alt="{{ $data->name }}">
-                                                        <img class="secondary__image" src="{{ $secondaryImage }}"
-                                                            alt="{{ $data->name }}">
-                                                    </a>
+                                @if (isset($query))
+                                    <h5 class="mb-4">Hasil pencarian untuk: <strong>{{ $query }}</strong></h5>
+                                @endif
+                                @if ($product->isEmpty())
+                                    <p class="text-muted">Tidak ada produk yang cocok dengan pencarian.</p>
+                                @else
+                                    @foreach ($product as $data)
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-6">
+                                            <div class="grid__wraper">
+                                                <div class="grid__wraper__img">
+                                                    <div class="grid__wraper__img__inner">
+                                                        <a href="{{ url('/product/' . $data->slug) }}">
+                                                            @php
+                                                                $image =
+                                                                    $data->image && Storage::exists($data->image)
+                                                                        ? Storage::url($data->image)
+                                                                        : asset('assets/frontend/img/grid/grid__1.png');
+                                                                $secondaryImage =
+                                                                    $data->image && Storage::exists($data->image)
+                                                                        ? Storage::url($data->image)
+                                                                        : asset('assets/frontend/img/grid/grid__2.png');
+                                                            @endphp
+                                                            <img class="primary__image" src="{{ $image }}"
+                                                                alt="{{ $data->name }}">
+                                                            <img class="secondary__image" src="{{ $secondaryImage }}"
+                                                                alt="{{ $data->name }}">
+                                                        </a>
+                                                    </div>
+
+                                                    <div class="grid__wraper__icon">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="{{ route('cart.add', $data->id) }}"
+                                                                    onclick="event.preventDefault(); document.getElementById('add-to-cart-form-{{ $data->id }}').submit();"
+                                                                    data-bs-toggle="tooltip" title="Add To Cart">
+                                                                    <i class="fas fa-shopping-cart"></i>
+                                                                </a>
+
+                                                                <form id="add-to-cart-form-{{ $data->id }}"
+                                                                    action="{{ route('cart.add', $data->id) }}"
+                                                                    method="POST" class="d-none">
+                                                                    @csrf
+                                                                    <input type="hidden" name="qty" value="1">
+                                                                </form>
+
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+
+                                                    <div class="grid__wraper__badge">
+                                                        <span class="sale__badge">New</span>
+                                                    </div>
                                                 </div>
-
-                                                <div class="grid__wraper__icon">
-                                                    <ul>
-                                                        <li>
-                                                            <a href="{{ route('cart.add', $data->id) }}"
-                                                                onclick="event.preventDefault(); document.getElementById('add-to-cart-form-{{ $data->id }}').submit();"
-                                                                data-bs-toggle="tooltip" title="Add To Cart">
-                                                                <i class="fas fa-shopping-cart"></i>
-                                                            </a>
-
-                                                            <form id="add-to-cart-form-{{ $data->id }}"
-                                                                action="{{ route('cart.add', $data->id) }}" method="POST"
-                                                                class="d-none">
-                                                                @csrf
-                                                                <input type="hidden" name="qty" value="1">
-                                                            </form>
-
-                                                        </li>
-                                                    </ul>
-                                                </div>
-
-                                                <div class="grid__wraper__badge">
-                                                    <span class="sale__badge">New</span>
-                                                </div>
-                                            </div>
-                                            <div class="grid__wraper__info">
-                                                <h3 class="grid__wraper__tittle">
-                                                    <a href="{{ url('/product/' . $data->slug) }}">{{ $data->name }}</a>
-                                                </h3>
-                                                <div class="grid__wraper__price">
-                                                    <span>Rp {{ number_format($data->price, 0, ',', '.') }}</span>
+                                                <div class="grid__wraper__info">
+                                                    <h3 class="grid__wraper__tittle">
+                                                        <a
+                                                            href="{{ url('/product/' . $data->slug) }}">{{ $data->name }}</a>
+                                                    </h3>
+                                                    <div class="grid__wraper__price">
+                                                        <span>Rp {{ number_format($data->price, 0, ',', '.') }}</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                @endforeach
+                                    @endforeach
+                                @endif
 
                             </div>
                         </div>

@@ -39,4 +39,21 @@ class FrontendController extends Controller
         return view('product', compact('product', 'category', 'selectedCategory'));
     }
 
+    public function search()
+    {
+        $query = request('q');
+
+        $product = Product::where('name', 'like', '%' . $query . '%')
+            ->orWhere('description', 'like', '%' . $query . '%')
+            ->orWhereHas('category', function ($q) use ($query) {
+                $q->where('name', 'like', '%' . $query . '%');
+            })
+            ->latest()
+            ->get();
+
+        $category = Category::all(); // untuk sidebar/filter kategori jika dibutuhkan
+
+        return view('product', compact('product', 'category', 'query'));
+    }
+
 }

@@ -1,98 +1,3 @@
-<!-- header__topbar__start -->
-<div class="header__topbar desktop__menu__wrapper">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-7 col-lg-7">
-                <div class="header__topbar__left">
-                    <ul>
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-                                <rect x="48" y="96" width="416" height="320" rx="40" ry="40"
-                                    fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="32" />
-                                <path fill="none" stroke="currentColor" stroke-linecap="round"
-                                    stroke-linejoin="round" stroke-width="32" d="M112 160l144 112 144-112" />
-                            </svg>example@example.com
-                        </li>
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-                                <path
-                                    d="M256 48c-79.5 0-144 61.39-144 137 0 87 96 224.87 131.25 272.49a15.77 15.77 0 0025.5 0C304 409.89 400 272.07 400 185c0-75.61-64.5-137-144-137z"
-                                    fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="32" />
-                                <circle cx="256" cy="192" r="48" fill="none" stroke="currentColor"
-                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
-                            </svg>City, State, ZIP Code
-                        </li>
-                    </ul>
-
-                </div>
-            </div>
-            <div class="col-xl-5 col-lg-5">
-                <div class="header__topbar__right">
-
-                    <div class="header__topbar__language__wraper">
-                        <div class="header__topbar__language">
-                            English <i class="fa fa-angle-down"></i>
-                            <div class="header__topbar__language__inner">
-                                <ul>
-                                    <li class="active">
-                                        <a href="#"> English
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Espanol
-
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> Português (portugal)</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="header__topbar__social__icon">
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fab fa-youtube"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fab fa-tiktok"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- header__topbar__end -->
-
-
-<!-- header section start -->
 <header>
     <div class="headerarea header__sticky">
         <div class="container desktop__menu__wrapper">
@@ -303,7 +208,9 @@
                                                     fill="none" stroke="currentColor" stroke-linecap="round"
                                                     stroke-linejoin="round" stroke-width="32" />
                                             </svg>
-                                            <span class=" bigcounter">2</span>
+                                            <span class=" bigcounter">
+                                                {{ $cartItems->sum('qty') }}
+                                            </span>
 
                                         </div>
 
@@ -335,8 +242,8 @@
             </div>
 
             <div class="mobile-search">
-                <form class="search-form" action="#">
-                    <input type="text" placeholder="Search entire store…">
+                <form class="search-form" action="{{ route('product.search') }}" method="get">
+                    <input type="text" name="q" placeholder="Search entire store…">
                     <button class="button-search"><i class="fa fa-search"></i></button>
                 </form>
             </div>
@@ -511,13 +418,13 @@
                 </svg></button>
         </div>
         <div class="headersearch__active__input">
-            <form action="/search" method="get" role="search" style="position: relative;">
+            <form action="{{ route('product.search') }}" method="get" role="search" style="position: relative;">
                 <div class="header__form__search">
-                    <input type="search" name="q" value="" placeholder="Search our store"
+                    <input type="search" name="q" placeholder="Search our store"
                         class="input-text" autocomplete="off">
                     <button type="submit"><i class="fa fa-search"></i></button>
                 </div>
-            </form>
+            </form>            
         </div>
     </div>
     <!-- header__search -->
