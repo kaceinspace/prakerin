@@ -63,7 +63,6 @@ class CartController extends Controller
         toast('Jumlah berhasil diperbarui.', 'success');
         return redirect()->route('cart.index');
     }
-
     public function remove($id)
     {
         $cart = Cart::where('id', $id)->where('user_id', auth()->id())->firstOrFail();
@@ -75,17 +74,14 @@ class CartController extends Controller
     public function checkout()
     {
         $cartItems = Cart::with('product')->where('user_id', auth()->id())->get();
-
         if ($cartItems->isEmpty()) {
             toast('Keranjang kosong. Tidak bisa checkout.', 'warning');
             return redirect()->route('cart.index');
         }
-
         // Hitung total harga
         $total = $cartItems->sum(function ($item) {
             return $item->qty * $item->product->price;
         });
-
         // Simpan order
         $order = Order::create([
             'user_id'     => auth()->id(),

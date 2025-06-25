@@ -28,7 +28,7 @@ class AppServiceProvider extends ServiceProvider
             if (Auth::check()) {
                 $cartItems = Cart::with('product')
                     ->where('user_id', Auth::id())
-                    ->get(); // <-- ini sudah collection
+                    ->get();
             }
 
             // pastikan ini adalah collection, bukan array

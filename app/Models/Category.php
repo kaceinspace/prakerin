@@ -15,6 +15,7 @@ class Category extends Model
         return $this->hasMany(Product::class);
     }
 
+    // mengganti kunci dari 'id' ke 'slug'
     public function getRouteKeyName()
     {
         return 'slug';

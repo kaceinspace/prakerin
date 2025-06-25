@@ -12,33 +12,33 @@
 
             <div class="minicart__single__wraper">
                 @forelse ($cartItems as $item)
-                    <div class="minicart__single">
-                        <div class="minicart__single__img">
-                            <a href="{{ route('product.show', $item->product->slug) }}">
-                                <img src="{{ Storage::url($item->product->image) }}" alt="{{ $item->product->name }}">
-                            </a>
-                            <div class="minicart__single__close">
-                                <form action="{{ route('cart.remove', $item->id) }}" method="POST">
-                                    @csrf
-                                    @method('DELETE')
-                                    <button title="Remove"><i class="fa fa-close"></i></button>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="minicart__single__content">
-                            <h4><a href="#">{{ $item->product->name }}</a></h4>
-                            <span>{{ $item->qty }} x
-                                <span class="money">Rp {{ number_format($item->product->price, 0, ',', '.') }}</span>
-                            </span>
+                <div class="minicart__single">
+                    <div class="minicart__single__img">
+                        <a href="{{ route('product.show', $item->product->slug) }}">
+                            <img src="{{ Storage::url($item->product->image) }}" alt="{{ $item->product->name }}">
+                        </a>
+                        <div class="minicart__single__close">
+                            <form action="{{ route('cart.remove', $item->id) }}" method="POST">
+                                @csrf
+                                @method('DELETE')
+                                <button title="Remove"><i class="fa fa-close"></i></button>
+                            </form>
                         </div>
                     </div>
+                    <div class="minicart__single__content">
+                        <h4><a href="#">{{ $item->product->name }}</a></h4>
+                        <span>{{ $item->qty }} x
+                            <span class="money">Rp {{ number_format($item->product->price, 0, ',', '.') }}</span>
+                        </span>
+                    </div>
+                </div>
                 @empty
-                    <p class="text-center p-3">Keranjang kosong</p>
+                <p class="text-center p-3">Keranjang kosong</p>
                 @endforelse
             </div>
 
             @php
-                $total = $cartItems->sum(fn($item) => $item->qty * $item->product->price);
+            $total = $cartItems->sum(fn($item) => $item->qty * $item->product->price);
             @endphp
 
             <div class="minicart__footer">
