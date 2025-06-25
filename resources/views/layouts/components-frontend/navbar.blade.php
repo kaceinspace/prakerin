@@ -4,8 +4,7 @@
             <div class="row common__row position-relative">
                 <div class="col-xl-2 col-lg-2 col-md-6">
                     <div class="headerarea__logo">
-                        <a href="#"><img src="{{ asset('assets/frontend/img/logo/logo__1.png') }}"
-                                alt=""></a>
+                        <a href="#"><img src="{{ asset('assets/frontend/img/logo/logo__1.png') }}" alt=""></a>
                     </div>
                 </div>
 
@@ -16,13 +15,12 @@
                         <nav>
                             <ul>
                                 <li>
-                                    <a class="headerarea__has__dropdown " href="{{ url('/') }}">Home
+                                    <a href="{{ url('/') }}">Home
                                     </a>
                                 </li>
 
                                 <li class="position-static">
-                                    <a class="headerarea__has__dropdown" href="{{ route('product.index') }}">Product
-                                        <span class="header__label">New</span>
+                                    <a href="{{ route('product.index') }}">Product
                                     </a>
                                 </li>
                                 <li><a href="{{ url('about') }}">About</a> </li>
@@ -42,13 +40,10 @@
                             <li>
                                 <div class="headerarea__search cursor__pointer">
 
-                                    <svg role="presentation" stroke-width="2" focusable="false" width="22"
-                                        height="22" class="icon icon-search" viewBox="0 0 22 22">
-                                        <circle cx="11" cy="10" r="7" fill="none"
-                                            stroke="currentColor">
+                                    <svg role="presentation" stroke-width="2" focusable="false" width="22" height="22" class="icon icon-search" viewBox="0 0 22 22">
+                                        <circle cx="11" cy="10" r="7" fill="none" stroke="currentColor">
                                         </circle>
-                                        <path d="m16 15 3 3" stroke="currentColor" stroke-linecap="round"
-                                            stroke-linejoin="round"></path>
+                                        <path d="m16 15 3 3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
                                     </svg>
 
 
@@ -61,14 +56,8 @@
                                     <div class="setting__wrap__active">
 
                                         <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-                                            <path
-                                                d="M344 144c-3.92 52.87-44 96-88 96s-84.15-43.12-88-96c-4-55 35-96 88-96s92 42 88 96z"
-                                                fill="none" stroke="currentColor" stroke-linecap="round"
-                                                stroke-linejoin="round" stroke-width="32" />
-                                            <path
-                                                d="M256 304c-87 0-175.3 48-191.64 138.6C62.39 453.52 68.57 464 80 464h352c11.44 0 17.62-10.48 15.65-21.4C431.3 352 343 304 256 304z"
-                                                fill="none" stroke="currentColor" stroke-miterlimit="10"
-                                                stroke-width="32" />
+                                            <path d="M344 144c-3.92 52.87-44 96-88 96s-84.15-43.12-88-96c-4-55 35-96 88-96s92 42 88 96z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+                                            <path d="M256 304c-87 0-175.3 48-191.64 138.6C62.39 453.52 68.57 464 80 464h352c11.44 0 17.62-10.48 15.65-21.4C431.3 352 343 304 256 304z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" />
                                         </svg>
 
                                     </div>
@@ -79,24 +68,14 @@
                                 <div class="headermiddle__bar cursor__pointer">
                                     <div class="headermiddle__account">
                                         <div class="headermiddle__account__img">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon"
-                                                viewBox="0 0 512 512">
-                                                <circle cx="176" cy="416" r="16" fill="none"
-                                                    stroke="currentColor" stroke-linecap="round"
-                                                    stroke-linejoin="round" stroke-width="32" />
-                                                <circle cx="400" cy="416" r="16" fill="none"
-                                                    stroke="currentColor" stroke-linecap="round"
-                                                    stroke-linejoin="round" stroke-width="32" />
-                                                <path fill="none" stroke="currentColor" stroke-linecap="round"
-                                                    stroke-linejoin="round" stroke-width="32"
-                                                    d="M48 80h64l48 272h256" />
-                                                <path
-                                                    d="M160 288h249.44a8 8 0 007.85-6.43l28.8-144a8 8 0 00-7.85-9.57H128"
-                                                    fill="none" stroke="currentColor" stroke-linecap="round"
-                                                    stroke-linejoin="round" stroke-width="32" />
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                                <circle cx="176" cy="416" r="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+                                                <circle cx="400" cy="416" r="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+                                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M48 80h64l48 272h256" />
+                                                <path d="M160 288h249.44a8 8 0 007.85-6.43l28.8-144a8 8 0 00-7.85-9.57H128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
                                             </svg>
                                             <span class="bigcounter">
-                                                {{ $cartItems->sum('qty') }}
+                                                {{ $cartItems->count() }}
                                             </span>
 
 
@@ -129,9 +108,7 @@
             <div class="col-sm-4 col-2">
                 <div class="mobile-off-canvas">
                     <a class="mobile-aside-button" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="feather feather-menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
                             <line x1="3" y1="12" x2="21" y2="12"></line>
                             <line x1="3" y1="6" x2="21" y2="6"></line>
                             <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -141,8 +118,7 @@
             </div>
             <div class="col-sm-4 col-5">
                 <div class="mobile-logo">
-                    <a class="logo__mobile" href="#"><img
-                            src="{{ asset('assets/frontend/img/logo/logo__1.png') }}" alt="logo"></a>
+                    <a class="logo__mobile" href="#"><img src="{{ asset('assets/frontend/img/logo/logo__1.png') }}" alt="logo"></a>
                 </div>
             </div>
             <div class="col-sm-4 col-5">
@@ -155,13 +131,10 @@
                             <li>
                                 <div class="headerarea__search cursor__pointer">
 
-                                    <svg role="presentation" stroke-width="2" focusable="false" width="22"
-                                        height="22" class="icon icon-search" viewBox="0 0 22 22">
-                                        <circle cx="11" cy="10" r="7" fill="none"
-                                            stroke="currentColor">
+                                    <svg role="presentation" stroke-width="2" focusable="false" width="22" height="22" class="icon icon-search" viewBox="0 0 22 22">
+                                        <circle cx="11" cy="10" r="7" fill="none" stroke="currentColor">
                                         </circle>
-                                        <path d="m16 15 3 3" stroke="currentColor" stroke-linecap="round"
-                                            stroke-linejoin="round"></path>
+                                        <path d="m16 15 3 3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
                                     </svg>
 
 
@@ -172,16 +145,9 @@
                                 <div class="setting__wrap cursor__pointer">
                                     <div class="setting__wrap__active">
 
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon"
-                                            viewBox="0 0 512 512">
-                                            <path
-                                                d="M344 144c-3.92 52.87-44 96-88 96s-84.15-43.12-88-96c-4-55 35-96 88-96s92 42 88 96z"
-                                                fill="none" stroke="currentColor" stroke-linecap="round"
-                                                stroke-linejoin="round" stroke-width="32" />
-                                            <path
-                                                d="M256 304c-87 0-175.3 48-191.64 138.6C62.39 453.52 68.57 464 80 464h352c11.44 0 17.62-10.48 15.65-21.4C431.3 352 343 304 256 304z"
-                                                fill="none" stroke="currentColor" stroke-miterlimit="10"
-                                                stroke-width="32" />
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                            <path d="M344 144c-3.92 52.87-44 96-88 96s-84.15-43.12-88-96c-4-55 35-96 88-96s92 42 88 96z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+                                            <path d="M256 304c-87 0-175.3 48-191.64 138.6C62.39 453.52 68.57 464 80 464h352c11.44 0 17.62-10.48 15.65-21.4C431.3 352 343 304 256 304z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" />
                                         </svg>
 
                                     </div>
@@ -192,24 +158,14 @@
                                 <div class="headermiddle__bar cursor__pointer">
                                     <div class="headermiddle__account">
                                         <div class="headermiddle__account__img">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon"
-                                                viewBox="0 0 512 512">
-                                                <circle cx="176" cy="416" r="16" fill="none"
-                                                    stroke="currentColor" stroke-linecap="round"
-                                                    stroke-linejoin="round" stroke-width="32" />
-                                                <circle cx="400" cy="416" r="16" fill="none"
-                                                    stroke="currentColor" stroke-linecap="round"
-                                                    stroke-linejoin="round" stroke-width="32" />
-                                                <path fill="none" stroke="currentColor" stroke-linecap="round"
-                                                    stroke-linejoin="round" stroke-width="32"
-                                                    d="M48 80h64l48 272h256" />
-                                                <path
-                                                    d="M160 288h249.44a8 8 0 007.85-6.43l28.8-144a8 8 0 00-7.85-9.57H128"
-                                                    fill="none" stroke="currentColor" stroke-linecap="round"
-                                                    stroke-linejoin="round" stroke-width="32" />
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                                <circle cx="176" cy="416" r="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+                                                <circle cx="400" cy="416" r="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+                                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M48 80h64l48 272h256" />
+                                                <path d="M160 288h249.44a8 8 0 007.85-6.43l28.8-144a8 8 0 00-7.85-9.57H128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
                                             </svg>
                                             <span class=" bigcounter">
-                                                {{ $cartItems->sum('qty') }}
+                                                {{ $cartItems->count() }}
                                             </span>
 
                                         </div>
@@ -326,21 +282,20 @@
                     <div class="lang-curr-dropdown account-dropdown-active">
                         <ul>
                             @auth
-                                <li>
-                                    <a href="{{ route('orders.index') }}">My Orders</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                        Logout
-                                    </a>
-                                </li>
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                    @csrf
-                                </form>
+                            <li>
+                                <a href="{{ route('orders.index') }}">My Orders</a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                    Logout
+                                </a>
+                            </li>
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                @csrf
+                            </form>
                             @else
-                                <li><a href="{{ route('login') }}">Login</a></li>
-                                <li><a href="{{ route('register') }}">Create Account</a></li>
+                            <li><a href="{{ route('login') }}">Login</a></li>
+                            <li><a href="{{ route('register') }}">Create Account</a></li>
                             @endauth
                         </ul>
                     </div>
@@ -363,8 +318,7 @@
         <button class="setting__wrap__close">
             <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
                 <title>Close</title>
-                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="32" d="M368 368L144 144M368 144L144 368"></path>
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"></path>
             </svg>
         </button>
 
@@ -375,31 +329,30 @@
         <div class="setting__wrap__list__inner">
             <ul>
                 @auth
-                    <li>
-                        <a href="{{ route('orders.index') }}">My Orders</a>
-                    </li>
-                    <li>
-                        <a href="{{ route('cart.index') }}">Cart</a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            onclick="event.preventDefault(); document.getElementById('logout-form-2').submit();">
-                            Logout
-                        </a>
-                    </li>
-                    <form id="logout-form-2" action="{{ route('logout') }}" method="POST" class="d-none">
-                        @csrf
-                    </form>
+                <li>
+                    <a href="{{ route('orders.index') }}">My Orders</a>
+                </li>
+                <li>
+                    <a href="{{ route('cart.index') }}">Cart</a>
+                </li>
+                <li>
+                    <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form-2').submit();">
+                        Logout
+                    </a>
+                </li>
+                <form id="logout-form-2" action="{{ route('logout') }}" method="POST" class="d-none">
+                    @csrf
+                </form>
                 @else
-                    <li>
-                        <a href="{{ route('login') }}">Login</a>
-                    </li>
-                    <li>
-                        <a href="{{ route('cart.index') }}">Cart</a>
-                    </li>
-                    <li>
-                        <a href="{{ route('register') }}">Create Account</a>
-                    </li>
+                <li>
+                    <a href="{{ route('login') }}">Login</a>
+                </li>
+                <li>
+                    <a href="{{ route('cart.index') }}">Cart</a>
+                </li>
+                <li>
+                    <a href="{{ route('register') }}">Create Account</a>
+                </li>
                 @endauth
             </ul>
         </div>
@@ -413,18 +366,16 @@
             <button class="headersearch__active__close">
                 <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
                     <title>Close</title>
-                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="32" d="M368 368L144 144M368 144L144 368"></path>
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"></path>
                 </svg></button>
         </div>
         <div class="headersearch__active__input">
             <form action="{{ route('product.search') }}" method="get" role="search" style="position: relative;">
                 <div class="header__form__search">
-                    <input type="search" name="q" placeholder="Search our store"
-                        class="input-text" autocomplete="off">
+                    <input type="search" name="q" placeholder="Search our store" class="input-text" autocomplete="off">
                     <button type="submit"><i class="fa fa-search"></i></button>
                 </div>
-            </form>            
+            </form>
         </div>
     </div>
     <!-- header__search -->

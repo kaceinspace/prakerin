@@ -26,6 +26,11 @@ class Product extends Model
             ->withTimestamps();
     }
 
+    public function reviews()
+    {
+        return $this->hasMany(Review::class);
+    }
+
     public function getRouteKeyName()
     {
         return 'slug';

@@ -28,6 +28,10 @@ Route::get('/checkout', [CartController::class, 'checkout'])->name('cart.checkou
 Route::get('/orders', [OrderController::class, 'index'])->name('orders.index');
 Route::get('/orders/{id}', [OrderController::class, 'show'])->name('orders.show');
 
+// review
+Route::post('/product/{product}/review', [\App\Http\Controllers\ReviewController::class, 'store'])
+    ->middleware('auth')->name('review.store');
+
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 

@@ -92,26 +92,7 @@
                     <h2>Best Selling</h2>
                 </div>
             </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                <div class="best__selling__tab">
-                    <ul class="nav  best__selling__tab__wrap" id="myTab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <button class="product__tap__link active" data-bs-toggle="tab"
-                                data-bs-target="#projects__one" type="button">Man</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="product__tap__link" data-bs-toggle="tab" data-bs-target="#projects__two"
-                                type="button">Woman</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="product__tap__link" data-bs-toggle="tab" data-bs-target="#projects__three"
-                                type="button">Baby</button>
-                        </li>
-
-
-                    </ul>
-                </div>
-            </div>
+          
         </div>
 
         <div class="tab-content " id="myTabContent">
