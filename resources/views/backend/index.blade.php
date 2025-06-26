@@ -56,6 +56,20 @@
                 </div>
             </div>
         </div>
+
+        <div class="item">
+            <div class="card border-0 zoom-in bg-info-subtle shadow-none">
+                <div class="card-body">
+                    <div class="text-center">
+                        <img src="{{ asset('assets/backend/images/svgs/icon-wallet.svg') }}" width="50" height="50"
+                            class="mb-3" alt="icon" />
+                        <p class="fw-semibold fs-3 text-info mb-1">Total Revenue </p>
+                        <h5 class="fw-semibold text-info mb-0">Rp {{ number_format($totalRevenue, 0, ',', '.') }}
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Filter Form -->

@@ -49,6 +49,7 @@ class BackendController extends Controller
         }
 
         $availableYears = Order::selectRaw('YEAR(created_at) as year')->distinct()->pluck('year');
+        $totalRevenue   = array_sum($monthlyRevenueData);
 
         return view('backend.index', compact(
             'totalOrders',
@@ -59,7 +60,8 @@ class BackendController extends Controller
             'monthlyProductSales',
             'status',
             'year',
-            'availableYears'
+            'availableYears',
+            'totalRevenue'
         ));
     }
 }

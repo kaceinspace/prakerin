@@ -4,6 +4,7 @@ use App\Http\Controllers\BackendController;
 use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\OrderController as BackendOrderController;
 use App\Http\Controllers\Backend\ProductController;
+use App\Http\Controllers\Backend\ReportController;
 use App\Http\Controllers\Backend\UserController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\FrontendController;
@@ -49,5 +50,8 @@ Route::group(['prefix' => 'admin', 'as' => 'backend.', 'middleware' => ['auth', 
     Route::resource('/orders', BackendOrderController::class);
     Route::put('/orders/{id}/status', [BackendOrderController::class, 'updateStatus'])
         ->name('orders.updateStatus');
+    Route::get('/report', [ReportController::class, 'index'])->name('report.index');
+    Route::get('/report/export-excel', [ReportController::class, 'exportExcel'])->name('report.export.excel');
+    Route::get('/report/export-pdf', [ReportController::class, 'exportPDF'])->name('report.export.pdf');
 
 });
