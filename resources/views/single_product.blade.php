@@ -53,7 +53,7 @@
                     <hr>
 
                     <div class="single__product__description mb-3">
-                        <p>{{ $product->description }}</p>
+                        <p>{!! $product->description !!}</p>
                     </div>
 
                     <div class="single__product__special__feature mb-3">

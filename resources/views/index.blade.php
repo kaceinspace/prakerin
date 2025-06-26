@@ -83,7 +83,8 @@
 
 
 <!-- best__selling__start -->
-<div class="best__selling sp_bottom_80">
+<br>
+<div class="best__selling sp_bottom_80 mt-2">
     <div class="container">
 
         <div class="row">
@@ -92,7 +93,7 @@
                     <h2>Best Selling</h2>
                 </div>
             </div>
-          
+
         </div>
 
         <div class="tab-content " id="myTabContent">
@@ -125,10 +126,18 @@
                                         </li>
 
                                         <li>
-                                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top"
-                                                title="Add To Cart" data-bs-original-title="Add To Cart">
+                                            <a href="{{ route('cart.add', $data->id) }}"
+                                                onclick="event.preventDefault(); document.getElementById('add-to-cart-form-{{ $data->id }}').submit();"
+                                                data-bs-toggle="tooltip" title="Add To Cart">
                                                 <i class="fas fa-shopping-cart"></i>
                                             </a>
+
+                                            <form id="add-to-cart-form-{{ $data->id }}"
+                                                action="{{ route('cart.add', $data->id) }}" method="POST"
+                                                class="d-none">
+                                                @csrf
+                                                <input type="hidden" name="qty" value="1">
+                                            </form>
                                         </li>
 
                                     </ul>
@@ -248,14 +257,23 @@
                             </div>
                             <p>{{$data->description}}</p>
                             <div class="featurearea__quantity">
+
                                 <div class="qty-container">
                                     <button class="qty-btn-minus btn-qty" type="button"><i
                                             class="fa fa-minus"></i></button>
-                                    <input type="text" name="qty" value="1" class="input-qty">
+                                    <input type="text" name="qty" value="1" max="{{ $data->stock }}" class="input-qty">
                                     <button class="qty-btn-plus btn-qty" type="button"><i
                                             class="fa fa-plus"></i></button>
                                 </div>
-                                <a class="default__button" href="#">Add to cart</a>
+                                <a href="{{ route('cart.add', $data->id) }}" class="default__button"
+                                    onclick="event.preventDefault(); document.getElementById('add-to-cart-form-{{ $data->id }}').submit();">
+                                    Add to cart</a>
+                                <form id="add-to-cart-form-{{ $data->id }}" action="{{ route('cart.add', $data->id) }}"
+                                    method="POST" class="d-none">
+                                    @csrf
+                                    <input type="hidden" name="qty" value="1" max="{{ $data->stock }}"
+                                        class="input-qty">
+                                </form>
                             </div>
                         </div>
                     </div>

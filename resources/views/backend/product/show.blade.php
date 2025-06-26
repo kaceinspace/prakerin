@@ -52,7 +52,7 @@
                         <div class="col-md-6">
                             <div class="mb-3">
                                 <label><strong>Deskripsi:</strong></label>
-                                <div>{{ $product->description }}</div>
+                                <div>{!! $product->description !!}</div>
                             </div>
                         </div>
                     </div>
