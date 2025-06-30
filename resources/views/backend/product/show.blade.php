@@ -57,6 +57,34 @@
                         </div>
                     </div>
 
+                    <div class="row mt-4">
+                        <div class="col-md-12">
+                            <label><strong>Galeri Gambar Produk</strong></label>
+
+                            {{-- Dropzone --}}
+                            <form action="{{ route('backend.product.images.store', $product->id) }}" class="dropzone"
+                                id="image-dropzone" enctype="multipart/form-data">
+                                @csrf
+                            </form>
+
+                            {{-- List Gambar --}}
+                            <div class="row mt-3">
+                                @foreach ($product->images as $img)
+                                <div class="col-md-2 mb-3 text-center">
+                                    <img src="{{ Storage::url($img->image) }}" class="img-fluid rounded"
+                                        style="height:100px; object-fit:cover">
+                                    <form action="{{ route('backend.product.images.destroy', $img->id) }}" method="POST"
+                                        class="mt-1">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="btn btn-sm btn-danger btn-block">Hapus</button>
+                                    </form>
+                                </div>
+                                @endforeach
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="mt-4">
                         <a href="{{ route('product.index') }}" class="btn btn-sm btn-secondary">
                             <i class="fas fa-arrow-left"></i> Kembali
@@ -68,3 +96,20 @@
     </div>
 </div>
 @endsection
+@push('styles')
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/min/dropzone.min.css">
+@endpush
+
+@push('scripts')
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/min/dropzone.min.js"></script>
+<script>
+    Dropzone.options.imageDropzone = {
+        paramName: 'file',
+        maxFilesize: 2, // MB
+        acceptedFiles: '.jpeg,.jpg,.png',
+        success: function () {
+            location.reload();
+        }
+    };
+</script>
+@endpush

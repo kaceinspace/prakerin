@@ -36,4 +36,14 @@ class Product extends Model
         return 'slug';
     }
 
+    public function images()
+    {
+        return $this->hasMany(ProductImage::class);
+    }
+
+    public function wishlists()
+    {
+        return $this->hasMany(Wishlist::class);
+    }
+
 }

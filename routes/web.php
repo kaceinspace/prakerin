@@ -47,6 +47,10 @@ Route::group(['prefix' => 'admin', 'as' => 'backend.', 'middleware' => ['auth', 
     Route::resource('/users', UserController::class);
     Route::resource('/category', CategoryController::class);
     Route::resource('/product', ProductController::class);
+    // add & delete image
+    Route::post('/product/{product}/images', [ProductImageController::class, 'store'])->name('product.images.store');
+    Route::delete('/product/images/{id}', [ProductImageController::class, 'destroy'])->name('product.images.destroy');
+
     Route::resource('/orders', BackendOrderController::class);
     Route::put('/orders/{id}/status', [BackendOrderController::class, 'updateStatus'])
         ->name('orders.updateStatus');
