@@ -54,19 +54,26 @@ class CouponController extends Controller
     }
 
     // Update kupon
-    public function update(Request $request, $id)
+    public function update(Request $request, Coupon $coupon)
     {
-        $coupon = Coupon::findOrFail($id);
-
         $request->validate([
             'code'       => 'required|unique:coupons,code,' . $coupon->id,
             'type'       => 'required|in:fixed,percent',
-            'value'      => 'required|integer|min:1',
+            'value'      => 'required',
             'start_date' => 'required|date',
             'end_date'   => 'required|date|after_or_equal:start_date',
         ]);
 
-        $coupon->update($request->all());
+        $value = preg_replace('/[^\d]/', '', $request->value);
+
+        $coupon->update([
+            'code'       => $request->code,
+            'type'       => $request->type,
+            'value'      => (int) $value,
+            'start_date' => $request->start_date,
+            'end_date'   => $request->end_date,
+            'is_active'  => $request->has('is_active'),
+        ]);
 
         toast('Kupon berhasil diperbarui', 'success');
         return redirect()->route('backend.coupons.index');
