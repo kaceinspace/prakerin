@@ -10,8 +10,7 @@
             <div class="card">
                 <div class="card-header bg-secondary">
                     Data Product
-                    <a href="{{ route('backend.product.create') }}" class="btn btn-info btn-sm"
-                        style="color:white; float: right;">
+                    <a href="{{ route('backend.product.create') }}" class="btn btn-info btn-sm" style="color:white; float: right;">
                         Tambah
                     </a>
                 </div>
@@ -37,16 +36,13 @@
                                     <td>{{ number_format($data->price,0,'.',',') }}</td>
                                     <td>{{ $data->stock }}</td>
                                     <td>
-                                        <a href="{{ route('backend.product.show', $data->id) }}"
-                                            class="btn btn-sm btn-success">
+                                        <a href="{{ route('backend.product.show', $data->id) }}" class="btn btn-sm btn-success">
                                             Show
                                         </a> |
-                                        <a href="{{ route('backend.product.edit', $data->id) }}"
-                                            class="btn btn-sm btn-warning">
+                                        <a href="{{ route('backend.product.edit', $data->id) }}" class="btn btn-sm btn-warning">
                                             Edit
                                         </a> |
-                                        <a href="{{ route('backend.product.destroy', $data->id) }}"
-                                            class="btn btn-sm btn-danger" data-confirm-delete="true">
+                                        <a href="{{ route('backend.product.destroy', $data->id) }}" class="btn btn-sm btn-danger" data-confirm-delete="true">
                                             Delete
                                         </a>
                                     </td>
@@ -67,5 +63,6 @@
 <script src="https://cdn.datatables.net/2.3.2/js/dataTables.bootstrap5.js"></script>
 <script>
     new DataTable('#dataproduct');
+
 </script>
 @endpush

@@ -41,8 +41,7 @@
                             <div class="mb-3">
                                 <label><strong>Gambar:</strong></label><br>
                                 @if($product->image)
-                                <img src="{{ Storage::url($product->image) }}" alt="Gambar Produk" class="img-thumbnail"
-                                    style="width: 150px; height: 150px; object-fit: cover;">
+                                <img src="{{ Storage::url($product->image) }}" alt="Gambar Produk" class="img-thumbnail" style="width: 150px; height: 150px; object-fit: cover;">
                                 @else
                                 <div>Tidak ada gambar</div>
                                 @endif
@@ -62,8 +61,7 @@
                             <label><strong>Galeri Gambar Produk</strong></label>
 
                             {{-- Dropzone --}}
-                            <form action="{{ route('backend.product.images.store', $product->id) }}" class="dropzone"
-                                id="image-dropzone" enctype="multipart/form-data">
+                            <form action="{{ route('backend.product.images.store', $product->id) }}" class="dropzone" id="image-dropzone" enctype="multipart/form-data">
                                 @csrf
                             </form>
 
@@ -71,10 +69,8 @@
                             <div class="row mt-3">
                                 @foreach ($product->images as $img)
                                 <div class="col-md-2 mb-3 text-center">
-                                    <img src="{{ Storage::url($img->image) }}" class="img-fluid rounded"
-                                        style="height:100px; object-fit:cover">
-                                    <form action="{{ route('backend.product.images.destroy', $img->id) }}" method="POST"
-                                        class="mt-1">
+                                    <img src="{{ Storage::url($img->image) }}" class="img-fluid rounded" style="height:100px; object-fit:cover">
+                                    <form action="{{ route('backend.product.images.destroy', $img->id) }}" method="POST" class="mt-1">
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="btn btn-sm btn-danger btn-block">Hapus</button>
@@ -96,20 +92,28 @@
     </div>
 </div>
 @endsection
-@push('styles')
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/min/dropzone.min.css">
-@endpush
+@section('styles')
+<link rel="stylesheet" href="{{ asset('assets/backend/libs/dropzone/dist/min/dropzone.min.css') }}" type="text/css">
+@endsection
 
 @push('scripts')
-<script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/min/dropzone.min.js"></script>
+<script src="{{ asset('assets/backend/libs/dropzone/dist/min/dropzone.min.js') }}" type="text/javascript"></script>
 <script>
     Dropzone.options.imageDropzone = {
-        paramName: 'file',
-        maxFilesize: 2, // MB
-        acceptedFiles: '.jpeg,.jpg,.png',
-        success: function () {
-            location.reload();
+        paramName: 'file'
+        , maxFilesize: 2, // MB
+        acceptedFiles: '.jpeg,.jpg,.png'
+        , uploadMultiple: false, // karena 1 per 1 tetap, Dropzone kirim file satu-satu
+        parallelUploads: 5
+        , timeout: 5000
+        , addRemoveLinks: true
+        , success: function() {
+            // Gunakan AJAX refresh, agar tidak reload halaman penuh
+            setTimeout(() => {
+                location.reload();
+            }, 500);
         }
     };
+
 </script>
 @endpush

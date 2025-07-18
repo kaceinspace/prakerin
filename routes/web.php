@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\BackendController;
 use App\Http\Controllers\Backend\CategoryController;
+use App\Http\Controllers\Backend\CouponController;
 use App\Http\Controllers\Backend\OrderController as BackendOrderController;
 use App\Http\Controllers\Backend\ProductController;
 use App\Http\Controllers\Backend\ProductImageController;
@@ -48,6 +49,8 @@ Route::group(['prefix' => 'admin', 'as' => 'backend.', 'middleware' => ['auth', 
     Route::resource('/users', UserController::class);
     Route::resource('/category', CategoryController::class);
     Route::resource('/product', ProductController::class);
+    Route::resource('/coupons', CouponController::class);
+
     // add & delete image
     Route::post('/product/{product}/images', [ProductImageController::class, 'store'])->name('product.images.store');
     Route::delete('/product/images/{id}', [ProductImageController::class, 'destroy'])->name('product.images.destroy');

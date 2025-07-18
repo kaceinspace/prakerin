@@ -21,8 +21,7 @@
 </head>
 
 <body>
-    <div class="toast toast-onload align-items-center text-bg-primary border-0" role="alert" aria-live="assertive"
-        aria-atomic="true">
+    <div class="toast toast-onload align-items-center text-bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
     </div>
     <!-- Preloader -->
     <div class="preloader">
@@ -44,6 +43,7 @@
                 function handleColorTheme(e) {
                     document.documentElement.setAttribute("data-color-theme", e);
                 }
+
             </script>
 
         </div>

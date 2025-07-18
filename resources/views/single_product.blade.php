@@ -30,11 +30,32 @@
                         <div class="featurearea__single__big__img">
                             <img src="{{  Storage::url($product->image) }}" alt="{{ $product->name }}">
                         </div>
+                        @if ($product->images && $product->images->count() > 0)
+                        @foreach ($product->images as $img)
+                        <div class="featurearea__single__big__img">
+                            <img src="{{ Storage::url($img->image) }}" alt="{{ $product->name }}">
+                        </div>
+                        @endforeach
+                        @endif
+
+
+
+
                     </div>
                     <div class="featurearea__thumb__img featurearea__thumb__img__slider__active slider__default__arrow">
                         <div class="featurearea__single__thumb__img">
                             <img src="{{ Storage::url($product->image) }}" alt="{{ $product->name }}">
                         </div>
+                        @if ($product->images && $product->images->count() > 0)
+
+                        @foreach ($product->images as $img)
+                        <div class="featurearea__single__thumb__img">
+                            <img src="{{ Storage::url($img->image) }}" alt="{{ $img->name }}">
+                        </div>
+                        @endforeach
+                        @endif
+
+
                     </div>
                 </div>
             </div>
@@ -139,8 +160,7 @@
                             <small class="text-muted">{{ $review->created_at->format('d M Y, H:i') }}</small>
                         </div>
                         <div class="mb-1">
-                            @for ($i = 1; $i <= 5; $i++) <i
-                                class="fa{{ $i <= $review->point ? 's' : 'r' }} fa-star text-warning"></i>
+                            @for ($i = 1; $i <= 5; $i++) <i class="fa{{ $i <= $review->point ? 's' : 'r' }} fa-star text-warning"></i>
                                 @endfor
                         </div>
                         <p class="mb-0">{{ $review->comment }}</p>

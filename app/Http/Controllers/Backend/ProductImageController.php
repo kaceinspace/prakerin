@@ -9,6 +9,7 @@ use Storage;
 
 class ProductImageController extends Controller
 {
+
     public function store(Request $request, $productId)
     {
         $request->validate([
@@ -16,7 +17,7 @@ class ProductImageController extends Controller
         ]);
 
         $file     = $request->file('file');
-        $filename = Str::random(20) . '.' . $file->getClientOriginalExtension();
+        $filename = Str::uuid() . '.' . $file->getClientOriginalExtension();
         $path     = $file->storeAs('products/gallery', $filename, 'public');
 
         ProductImage::create([
@@ -32,7 +33,7 @@ class ProductImageController extends Controller
         $image = ProductImage::findOrFail($id);
         Storage::disk('public')->delete($image->image);
         $image->delete();
-
-        return response()->json(['success' => true]);
+        toast('Data berhasil dihapus', 'success');
+        return back();
     }
 }
