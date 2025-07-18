@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\Cart;
 use App\Models\Order;
 use App\Models\Product;
+use App\Services\MidtransService;
 use Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
@@ -71,18 +72,18 @@ class CartController extends Controller
         return redirect()->route('cart.index');
     }
 
-    public function checkout()
+    public function checkout(MidtransService $midtrans)
     {
         $cartItems = Cart::with('product')->where('user_id', auth()->id())->get();
         if ($cartItems->isEmpty()) {
             toast('Keranjang kosong. Tidak bisa checkout.', 'warning');
             return redirect()->route('cart.index');
         }
-        // Hitung total harga
+
         $total = $cartItems->sum(function ($item) {
             return $item->qty * $item->product->price;
         });
-        // Simpan order
+
         $order = Order::create([
             'user_id'     => auth()->id(),
             'order_code'  => 'ORD-' . strtoupper(Str::random(8)),
@@ -90,9 +91,7 @@ class CartController extends Controller
             'status'      => 'pending',
         ]);
 
-        // Simpan detail order ke pivot `order_product`
         foreach ($cartItems as $item) {
-            // Kurangi stok
             $product = Product::find($item->product_id);
             $product->stock -= $item->qty;
             $product->save();
@@ -103,11 +102,15 @@ class CartController extends Controller
             ]);
         }
 
-        // Hapus isi keranjang
         Cart::where('user_id', auth()->id())->delete();
 
-        toast('Pesanan berhasil dibuat!', 'success');
-        return redirect()->route('orders.index');
+        // BUAT SNAP TOKEN
+        $snap = $midtrans->createTransaction($order);
+
+        return view('payment', [
+            'snapToken' => $snap->token,
+            'order'     => $order,
+        ]);
     }
 
 }

@@ -4,6 +4,7 @@ namespace App\Providers;
 use App\Models\Cart;
 use Auth;
 use Illuminate\Support\ServiceProvider;
+use Midtrans\Config;
 use View;
 
 class AppServiceProvider extends ServiceProvider
@@ -34,6 +35,12 @@ class AppServiceProvider extends ServiceProvider
             // pastikan ini adalah collection, bukan array
             $view->with('cartItems', collect($cartItems));
         });
+
+        Config::$serverKey    = config('midtrans.serverKey');
+        Config::$isProduction = config('midtrans.isProduction');
+        Config::$clientKey    = config('midtrans.clientKey');
+        Config::$isSanitized  = true;
+        Config::$is3ds        = true;
 
     }
 }
