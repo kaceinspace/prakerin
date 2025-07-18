@@ -12,6 +12,7 @@ use App\Http\Controllers\Backend\UserController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\OrderController;
+use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\ReviewController;
 use App\Http\Middleware\Admin;
 use Illuminate\Support\Facades\Route;
@@ -39,6 +40,9 @@ Route::get('/orders/{id}', [OrderController::class, 'show'])->name('orders.show'
 // review
 Route::post('/product/{product}/review', [ReviewController::class, 'store'])
     ->middleware('auth')->name('review.store');
+
+// payment
+Route::get('/payment/{order}', [PaymentController::class, 'pay'])->name('payment.process');
 
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -75,10 +75,10 @@ class CartController extends Controller
     public function checkout(MidtransService $midtrans)
     {
         $cartItems = Cart::with('product')->where('user_id', auth()->id())->get();
-        if ($cartItems->isEmpty()) {
-            toast('Keranjang kosong. Tidak bisa checkout.', 'warning');
-            return redirect()->route('cart.index');
-        }
+        // if ($cartItems->isEmpty()) {
+        //     toast('Keranjang kosong. Tidak bisa checkout.', 'warning');
+        //     return redirect()->route('cart.index');
+        // }
 
         $total = $cartItems->sum(function ($item) {
             return $item->qty * $item->product->price;
@@ -108,7 +108,7 @@ class CartController extends Controller
         $snap = $midtrans->createTransaction($order);
 
         return view('payment', [
-            'snapToken' => $snap->token,
+            'snapToken' => $snap,
             'order'     => $order,
         ]);
     }

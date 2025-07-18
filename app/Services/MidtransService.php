@@ -35,4 +35,5 @@ class MidtransService
     {
         return Transaction::status($orderCode);
     }
+
 }
