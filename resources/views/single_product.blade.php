@@ -96,7 +96,6 @@
     </div>
 </div>
 
-<!-- Review & Contact Section -->
 <div class="single__product__contact sp_bottom_80">
     <div class="container">
         <div class="row g-5">
